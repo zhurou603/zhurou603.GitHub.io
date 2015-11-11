@@ -7,16 +7,16 @@ kramdown:
 
 # 作者信息
 author: 
-  name: 闫肃
+  name: 晚晴幽草
   email: jeffjade@163.com
   link: http://www.jeffjade.com
   weibo: http://weibo.com/3235949794
   github: http://github.com/nicejade
 
 # 站点信息
-title: 锦瑟华年博客 
+title: 锦瑟华年博客
 description: 锦瑟华年博客
-url: http://yansu.org
+url: http://nicejade.github.io
 rss_url: /pages/atom.xml
 
 # avatar头像及Favicon
