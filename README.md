@@ -1,6 +1,7 @@
-### 我的博客
+### 锦瑟华年集
 
-地址：[http://yansu.org](http://yansu.org)
+此博客原作者博文地址：[http://yansu.org](http://yansu.org)
+个人常用博客-Hexo地址: [http://www.jeffjade.com](http://www.jeffjade.com)
 
 ### 安装说明
 
