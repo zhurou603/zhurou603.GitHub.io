@@ -14,8 +14,8 @@ author:
   github: http://github.com/nicejade
 
 # 站点信息
-title: 锦瑟华年博客
-description: 锦瑟华年博客
+title: 浣花剑洗录
+description: 浣花剑洗录
 url: http://nicejade.github.io
 rss_url: /pages/atom.xml
 
@@ -25,9 +25,9 @@ favicon: http://www.jeffjade.com/img/xuan.ico
 
 # google analytics 设置
 ga:
-  id: UA-54767140-1
-  url: yansu.org
+  id: UA-67901984-1
+  url: nicejade.github.io
 
 # disqus 设置
 disqus:
-  shortname: suyan-zh
+  shortname: jeffjade
