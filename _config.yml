@@ -6,7 +6,7 @@ kramdown:
   input: GFM
 
 # 作者信息
-author: 
+author:
   name: 晚晴幽草
   email: jeffjade@163.com
   link: http://www.jeffjade.com
@@ -15,12 +15,12 @@ author:
 
 # 站点信息
 title: 浣花剑洗录
-description: 浣花剑洗录
+description: 个人博客(Jekyll);整理、记载关于工具/资源/生活/技术/读书/影音等经验和思考;
 url: http://nicejade.github.io
 rss_url: /pages/atom.xml
 
 # avatar头像及Favicon
-avatar: https://ssl.moefq.com/images/2015/11/11/a26afec168d67edeeff1fe1526fb22a0.jpg
+avatar: http://7xoosr.com1.z0.glb.clouddn.com/nicejadeIcon.jpg
 favicon: http://www.jeffjade.com/img/xuan.ico
 
 # google analytics 设置
