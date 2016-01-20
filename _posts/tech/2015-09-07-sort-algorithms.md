@@ -185,7 +185,7 @@ void merge_array(vector<int> &nums, int b, int m, int e, vector<int> &temp)
 
     while (lb < m)
         temp[tb++] = nums[lb++];
-    
+
     while (rb < e)
         temp[tb++] = nums[rb++];
 
@@ -236,10 +236,10 @@ void quick_sort(vector<int> &nums, int b, int e, vector<int> &temp)
                 temp[rb--] = nums[i];
         }
         temp[lb] = nums[m];
-        
+
         for (int i = b; i < e; i++)
             nums[i] = temp[i];
-        
+
         quick_sort(nums, b, lb, temp);
         quick_sort(nums, lb + 1, e, temp);
     }
@@ -277,7 +277,7 @@ void quick_sort(vector<int> &nums, int b, int e)
 
 在了解算法之前，首先了解在一维数组中节点的下标：
 
-- i节点的父节点 parent(i) = floor((i-1)/2) 
+- i节点的父节点 parent(i) = floor((i-1)/2)
 - i节点的左子节点 left(i) = 2i + 1
 - i节点的右子节点 right(i) = 2i + 2
 
@@ -294,7 +294,7 @@ void heap_sort(vector<int> &nums)
     for (int i = n / 2 - 1; i >= 0; i--) { // build max heap
         max_heapify(nums, i, nums.size() - 1);
     }
-    
+
     for (int i = n - 1; i > 0; i--) { // heap sort
         int temp = nums[i];
         num[i] = nums[0];
