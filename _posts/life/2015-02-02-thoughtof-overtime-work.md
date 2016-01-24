@@ -1,6 +1,10 @@
 ---
 layout: black_white
 title: 关于加班这件事儿的随想
+category: 生活
+tags: Essay
+keywords: 随想
+description: 关于加班这件事儿的随想
 ---
 
 努力地尽自己之本职做好工作，

@@ -1,6 +1,10 @@
 ---
 layout: black_white
 title: 往南雄观银杏游记
+category: 生活
+tags: Essay
+keywords: 游记
+description: 往南雄观银杏游记
 ---
 
 ---
