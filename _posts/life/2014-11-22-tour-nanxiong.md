@@ -1,5 +1,5 @@
 ---
-layout: black_white
+layout: post
 title: 往南雄观银杏游记
 category: 生活
 tags: Essay

@@ -3,6 +3,7 @@ layout: post
 title: 好书推荐:邹韬奋的《事业与修养》
 category: 读书
 keywords: 阅读
+description: 邹韬奋的《事业与修养》读后感
 ---
 
 ## 一 关于背景

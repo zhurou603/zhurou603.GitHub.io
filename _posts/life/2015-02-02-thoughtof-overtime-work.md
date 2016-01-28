@@ -1,5 +1,5 @@
 ---
-layout: black_white
+layout: post
 title: 关于加班这件事儿的随想
 category: 生活
 tags: Essay
@@ -7,6 +7,7 @@ keywords: 随想
 description: 关于加班这件事儿的随想
 ---
 
+---
 努力地尽自己之本职做好工作，
 很多人都有(也应该有)这个特质;
 
