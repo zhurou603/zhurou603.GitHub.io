@@ -4,7 +4,7 @@ title: 在Mac下安装使用Vagrant
 category: 工具
 tags: [Mac, Vagrant]
 keywords: Mac,Vagrant
-description: 
+description:
 ---
 
 > Vagrant是一款用来构建虚拟开发环境的工具，它其实算是一个跨平台的虚拟机管理工具。
@@ -34,7 +34,7 @@ Vagrant依赖现有的虚拟机软件来管理虚拟机，如Virtualbox, Vmware 
 
 通过这个步骤，vagrant会去box列表中找`hashicorp/precise32`这个镜像，如果没有就去官方下载。Box被保存在`~/.vagrant`下。通过命令
 
-    vagrant box list 
+    vagrant box list
 
 可以查看已经下载的box。如果想以这个box再建立一个虚拟机，只要再创建一个目录，例如`~/Documents/Vagrant/Ubuntu32`，然后执行
 
