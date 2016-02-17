@@ -3,7 +3,7 @@ var jeffjade_firebase = new Firebase("https://nicejade.firebaseIO.com");
 jeffjade_firebase.child("sum").on("value", function(data) {
   var current_counter = data.val();
   if($("#counter").length > 0  && current_counter > 1){
-     $("#counter").html("&nbsp;本站总热度&nbsp;<font style='color:purple'>"+ current_counter +"</font>&nbsp;(℃)");
+     $("#counter").html("&nbsp;本站热度：<font style='color:purple'>"+ current_counter +"</font>(℃)");
   };
 });
 
@@ -23,7 +23,7 @@ jeffjade_firebase.child("detail/"+current_url).on("value", function(data){
 	var detail_counter = data.val();
 	if($("#detail_counter").length > 0 && detail_counter > 1){
 		$("#detail_counter").html(
-			"&nbsp;本页总热度&nbsp;<font style='color:purple'>"+ detail_counter +"</font>&nbsp;(℃)"
+			"&nbsp;本页热度：<font style='color:purple'>"+ detail_counter +"</font>(℃)"
 		);
 	}
 });
