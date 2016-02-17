@@ -6,15 +6,6 @@
   overflow: hidden;
   position: absolute;
   left: 0;
-  bottom: 94px;
-}
-#counter_show{
-  width: 100%;
-  height: 50px;
-  border-top: 1px solid #3c4149;
-  overflow: hidden;
-  position: absolute;
-  left: 0;
   bottom: 44px;
 }
 .contentCenter{
@@ -28,16 +19,16 @@
   -webkit-align-items: center; align-items: center; -webkit-box-pack: center;
   -webkit-justify-content: center; justify-content: center;
 }
-
+#counter_show{
+  text-align: center;
+  margin: 0 !important;
+  font-size: .9em !important;
+}
 #counter,#detail_counter{
-  color: #a6a6a7;
-  width: 100%;
+  color: #333;
   display: inline-block;
   text-align: center;
   margin: auto;
-}
-#counter:hover,#detail_counter:hover{
-  color: #f7f7f7;
 }
 </style>
 
@@ -54,11 +45,6 @@
 
     <div id="jeff_show">
       <a href="http://www.jeffjade.com" class="tags-btn contentCenter">晚晴幽草轩</a>
-    </div>
-
-    <div id="counter_show">
-      <font id="counter"></font>
-      <font id="detail_counter"></font>
     </div>
 
     <div id="tags__bottom">
