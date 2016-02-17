@@ -1,13 +1,65 @@
+<style>
+#jeff_show {
+  width: 100%;
+  height: 44px;
+  border-top: 1px solid #3c4149;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  bottom: 94px;
+}
+#counter_show{
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid #3c4149;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  bottom: 44px;
+}
+.contentCenter{
+  border-top: 1px solid #525965;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin:auto;
+  display: -webkit-box; display: -moz-box; display: -webkit-flex; display: flex;
+  -webkit-box-align: center;-moz-box-align: center;
+  -webkit-align-items: center; align-items: center; -webkit-box-pack: center;
+  -webkit-justify-content: center; justify-content: center;
+}
+
+#counter,#detail_counter{
+  color: #a6a6a7;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+}
+#counter:hover,#detail_counter:hover{
+  color: #f7f7f7;
+}
+</style>
+
 <aside id="sidebar">
   <nav id="tags">
     <a href="/index.html" id="avatar" style="background-image:url({{ site.avatar }})"></a>
 
     <ul id="tags__ul">
       <li id="pl__all" class="tags__li tags-btn active">全部</li>
-      {% for category in site.categories %} 
+      {% for category in site.categories %}
         <li id="{{ category[0] }}" class="tags__li tags-btn">{{ category[0] }}</li>
       {% endfor %}
     </ul>
+
+    <div id="jeff_show">
+      <a href="http://www.jeffjade.com" class="tags-btn contentCenter">晚晴幽草轩</a>
+    </div>
+
+    <div id="counter_show">
+      <font id="counter"></font>
+      <font id="detail_counter"></font>
+    </div>
 
     <div id="tags__bottom">
       <a href="mailto:{{ site.author.email }}" id="icon-email" class="tags-btn fontello"></a>
