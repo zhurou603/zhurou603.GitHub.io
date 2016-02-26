@@ -263,7 +263,7 @@ a {
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
-  cursor: crosshair; }
+  cursor: help; }
   #search-input::-webkit-input-placeholder {
     color: #cbcbcb;
     font-style: italic; }

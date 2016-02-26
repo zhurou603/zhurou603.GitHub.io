@@ -7,7 +7,7 @@ keywords: 激励之言,路遥,早晨从中午开始
 description: 《早晨从中午开始》是一篇路遥去世前躺在医院病床上写的《平凡的世界》创作随笔，50个小节5万多字，凝聚了一位平凡而伟大的作家生命中最后的心血。
 ---
 
-上一篇：[早晨从中午开始(中)](http://nicejade.github.io/2016-02-26-moring-started-at-noon-2.html)
+上一篇：[早晨从中午开始(中)](http://nicejade.github.io/2016-02-26-the-morning-started-at-noon-2.html)
 
 审慎地挽结并梳理网结。在大片的刈割中细致地“捡漏”。悉心地拦蓄后又瓷意汪洋般放脱。在一些令人望而生畏的地方以更大的勇气投入。在一些上下都平坦的道路上故意为自己投置似乎不可逾越的障碍。之后，经过巨大繁复劳动和精神折磨仍然能穿过去的地方，就可能取得较为满意的成果。
 
@@ -463,4 +463,4 @@ description: 《早晨从中午开始》是一篇路遥去世前躺在医院病�
 
 １９９１年初冬—１９９２年初春
 
-上一篇：[早晨从中午开始(中)](http://nicejade.github.io/2016-02-26-moring-started-at-noon-2.html)
+上一篇：[早晨从中午开始(中)](http://nicejade.github.io/2016-02-26-the-morning-started-at-noon-2.html)
