@@ -37,6 +37,22 @@ $('.pl__all').on('click', function() {
   }
 });
 
+$allLink = $('.pl__all');//所有链接
+$('#search-input').on('input', function(e){
+    var value = this.value;
+    $allLink.hide();
+    var filter = "all"; //所有链接中搜索
+    if (filter === 'all') {
+        $.each($allLink, function(k, v){
+            $(v).filter(":contains('"+value+"')").fadeIn(350);
+        });
+    }else{
+       $.each($filterLink[filter], function(k, v){
+            $(v).filter(":contains('"+value+"')").fadeIn(350);
+        });
+    }
+});
+
 // Enable fullscreen.
 $('#js-fullscreen').on('click', function() {
   if (button.hasClass('fullscreen')) {
@@ -135,4 +151,3 @@ function afterPjax() {
   }check();
   container.scroll(check);
 }afterPjax();
-
