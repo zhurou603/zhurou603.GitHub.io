@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 早晨从中午开始(上)
-category: 生活
+category: 读书
 tags: Essay
 keywords: 激励之言,路遥,早晨从中午开始
 description: 《早晨从中午开始》是一篇路遥去世前躺在医院病床上写的《平凡的世界》创作随笔，50个小节5万多字，凝聚了一位平凡而伟大的作家生命中最后的心血。
