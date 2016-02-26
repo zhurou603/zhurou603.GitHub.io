@@ -9,7 +9,7 @@ description: 《早晨从中午开始》是一篇路遥去世前躺在医院病�
 
 ---
 
-上一篇：[早晨从中午开始(上)](http://nicejade.github.io/2016-02-26-the-morning-started-at-noon.html)
+上一篇：[早晨从中午开始(上)](http://nicejade.github.io/2016/02/26/the-morning-started-at-noon.html)
 
 
 这是不狂妄。只有这各“目中无人”的状态下，才可能解放自己的精神，释放自己的能量。应该敢于把触角延伸到别人没有到过的地方，敢于进入“无人区”并树起自己的标志。每一个思想巨人都可以用自己的方法认识这个世界，揭示这个世界的奥妙，为什么你不可以呢”你估且认为你已经发现了通往华山的另一条道路。
@@ -499,5 +499,5 @@ description: 《早晨从中午开始》是一篇路遥去世前躺在医院病�
 
 人物关系之间和人物自身的心理冲突大规模地交织在一起，其纷繁错综有点“会战”的性质。好像一个人摆开好多摊象棋，不断调换角色和位置来下这些棋。在一片纷乱中得保持清醒的头脑和坚强的意志来进行。精心地组织“混乱”。
 
-上一篇：[早晨从中午开始(上)](http://nicejade.github.io/2016-02-26-the-morning-started-at-noon.html)
-下一篇：[早晨从中午开始(下)](http://nicejade.github.io/2016-02-26-the-morning-started-at-noon-3.html)
+上一篇：[早晨从中午开始(上)](http://nicejade.github.io/2016/02/26/the-morning-started-at-noon.html)
+下一篇：[早晨从中午开始(下)](http://nicejade.github.io/2016/02/26/the-morning-started-at-noon-3.html)
