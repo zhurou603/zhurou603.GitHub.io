@@ -37,6 +37,7 @@ $('.pl__all').on('click', function() {
   }
 });
 
+//Modify On-2016-02-26.-----------------Start
 $allLink = $('.pl__all');//所有链接
 $('#search-input').on('input', function(e){
     var value = this.value;
@@ -52,6 +53,7 @@ $('#search-input').on('input', function(e){
         });
     }
 });
+//Modify On-2016-02-26.-----------------End
 
 // Enable fullscreen.
 $('#js-fullscreen').on('click', function() {
