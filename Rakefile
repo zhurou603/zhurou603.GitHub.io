@@ -97,21 +97,26 @@ task :post, :title do |t, args|
   create_file(POSTS, filename, content, title, editor)
 end
 
-# Add At 2016-03－01
-desc "创建新 post"
+# Add 2016-03－01(rake post title="xx")
+desc "Create a post in _posts"
 task :new do
-  puts "请输入要创建的 post URL："
+  puts "Please Input Post Dir(book/life/resource/tech/tool,default Root)："
+  @dir = STDIN.gets.chomp
+  puts "Please Input Post Name(for Url)："
 	@url = STDIN.gets.chomp
-	puts "请输入 post 标题："
+	puts "Please Input Post Title(for Article)："
 	@name = STDIN.gets.chomp
-	puts "请输入 post 分类，以空格分隔："
+	puts "Please Input Post Categories(Separated By Spaces)："
 	@categories = STDIN.gets.chomp
+  puts "Please Input Post Description(Article Desc)："
+	@description = STDIN.gets.chomp
 	@slug = "#{@url}"
 	@slug = @slug.downcase.strip.gsub(' ', '-')
 	@date = Time.now.strftime("%F")
-	@post_name = "_posts/#{@date}-#{@slug}.md"
+  @post_url = (@dir=="") ? "" : ("/" + "#{@dir}");
+	@post_name = "_posts#{@post_url}/#{@date}-#{@slug}.md"
 	if File.exist?(@post_name)
-			abort("文件名已经存在！创建失败")
+			abort("Failed to create the file name already exists !")
 	end
 	FileUtils.touch(@post_name)
 	open(@post_name, 'a') do |file|
@@ -120,6 +125,7 @@ task :new do
 			file.puts "title: #{@name}"
 			file.puts "date: #{Time.now}"
 			file.puts "categories: #{@categories}"
+      file.puts "description: #{@description}"
 			file.puts "---"
 	end
 	exec "vi #{@post_name}"
