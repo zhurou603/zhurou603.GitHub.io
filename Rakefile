@@ -222,6 +222,7 @@ task :preview do
 end
 
 # rake deploy["Commit message"]
+# rake deploy "message"="Commit Message"
 desc "Deploy the site to a remote git repo"
 task :deploy, :message do |t, args|
   # message = args[:message]
