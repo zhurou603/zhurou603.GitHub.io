@@ -2,7 +2,9 @@
 layout: post
 title: AutoHotKey实用脚本分享
 date: 2016-03-12 15:00:23 +0800
-categories: AutoHotKey
+categories: 工具
+tags: AutoHotKey
+keywords: Windows,AutoHotKey,效率
 description: 介绍AutoHo使用方法，分享一个Auto实用脚本
 ---
 
