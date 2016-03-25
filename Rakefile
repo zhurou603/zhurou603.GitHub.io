@@ -100,16 +100,21 @@ end
 # Add 2016-03－01(rake post title="xx")
 desc "Create a post in _posts"
 task :new do
-  puts "Please Input Post Dir(book/life/resource/tech/tool,default Root)："
+  puts "Input File Path(book/life/resource/tech/tool,default _posts Root)："
   @dir = STDIN.gets.chomp
-  puts "Please Input Post Name(for Url)："
+  puts "Input File Name(for Url)："
 	@url = STDIN.gets.chomp
-	puts "Please Input Post Title(for Article)："
+	puts "Input Article Title(for Article)："
 	@name = STDIN.gets.chomp
-	puts "Please Input Post Categories(Separated By Spaces)："
+	puts "Input Article Categories(工具｜资源｜生活｜技术｜读书 Separated By Spaces)："
 	@categories = STDIN.gets.chomp
-  puts "Please Input Post Description(Article Desc)："
+  puts "Input Article Tags(Separated By ,)"
+  @tags = STDIN.gets.chomp
+  puts "Input Article Keywords(Separated By ,)"
+  @keywords = STDIN.gets.chomp
+  puts "Input Article Description(Article Desc)："
 	@description = STDIN.gets.chomp
+
 	@slug = "#{@url}"
 	@slug = @slug.downcase.strip.gsub(' ', '-')
 	@date = Time.now.strftime("%F")
@@ -125,6 +130,8 @@ task :new do
 			file.puts "title: #{@name}"
 			file.puts "date: #{Time.now}"
 			file.puts "categories: #{@categories}"
+      file.puts "tags: #{@tags}"
+      file.puts "keywords: #{@keywords}"
       file.puts "description: #{@description}"
 			file.puts "---"
 	end
