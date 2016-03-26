@@ -82,12 +82,12 @@ def open_command
 end
 
 # == Tasks =====================================================================
-
 # rake post["Title"]
+# rake post\["TitleDesc"\]  (If You Use Mac Zsh)
 desc "Create a post in _posts"
 task :post, :title do |t, args|
-  # title = args[:title]
-  title = ENV['title']
+  title = args[:title]
+  # title = ENV['title']
   template = CONFIG["post"]["template"]
   extension = CONFIG["post"]["extension"]
   editor = CONFIG["editor"]
@@ -97,7 +97,7 @@ task :post, :title do |t, args|
   create_file(POSTS, filename, content, title, editor)
 end
 
-# Add 2016-03－01(rake post title="xx")
+# Add 2016-03－01(rake new)
 desc "Create a post in _posts"
 task :new do
   puts "Input File Path(book/life/resource/tech/tool,default _posts Root)："
@@ -174,7 +174,8 @@ end
 # rake page["Title","Path/to/folder"]
 desc "Create a page (optional filepath)"
 task :page, :title, :path do |t, args|
-  title = args[:title]
+  # title = args[:title]
+  title = ENV["title"]
   template = CONFIG["page"]["template"]
   extension = CONFIG["page"]["extension"]
   editor = CONFIG["editor"]
