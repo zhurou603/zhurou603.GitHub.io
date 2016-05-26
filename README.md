@@ -1,12 +1,12 @@
-### 锦瑟华年集
+<h2 style="text-align:center">天意人间舫</h2>
 
 此博客原作者博文地址：[http://yansu.org](http://yansu.org)
 
-个人常用博客-Hexo地址: [http://www.jeffjade.com](http://www.jeffjade.com)
+个人主博客(Hexo)地址: [http://www.jeffjade.com](http://www.jeffjade.com)
 
 ### Fork说明
 14年有用Jekyll搭建过Blog；无奈那时Jekyll还无中文文档以及资料; 每每折腾起来，颇为费劲；15年初有转投Hexo怀抱，即便现在使用Hexo也觉其很是方便。
-怎奈养成了对于不错主题就想一试其美的冲动；故而此次回归于Jekyll，欲成就另一个私人空间的同时，也是想试用下写得不错的响应式主题。
+怎奈养成了对于不错主题就想一试其美的冲动；故而此次回归于Jekyll，欲成就另一个私人空间的同时，也是想试用下写得不错的响应式主题。对于这**天意人间舫**，有留一篇拙章为之记：[晚晴幽草轩,天意人间舫](http://www.jeffjade.com/2016/01/22/2016-01-22-jeffjade-and-nicejade/)。
 
 ### 安装说明
 
