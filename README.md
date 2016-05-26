@@ -1,4 +1,4 @@
-<h2 style="text-align:center">天意人间舫</h2>
+<h2 align="center">天意人间舫</h2>
 
 此博客原作者博文地址：[http://yansu.org](http://yansu.org)
 
