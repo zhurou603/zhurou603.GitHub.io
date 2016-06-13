@@ -16201,9 +16201,6 @@
 	//     h2.hinting-title {{ hintingTitle }}
 	//     <pre-code :code-string="codeString"></pre-code>
 	//     h2.hinting-title {{ hintingTitle2 }}
-	//     div(id="disqus_thread" name="vue-components")
-	//         <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-	//         <a href="http://disqus.com" class="dsq-brlink" target="_blank">Loading Disqus comments...</a>
 	// </template>
 	//
 	// <script type="text/javascript">
@@ -16226,12 +16223,7 @@
 	        preCode: _preCode2.default
 	    },
 	    methods: {},
-	    events: {
-	        'on-countdown-finish': function onCountdownFinish(countNum) {
-	            // countNum 统计调用此 countDown 次数;
-	            alert("countdown had down; num = " + countNum);
-	        }
-	    }
+	    events: {}
 	};
 	// </script>
 
@@ -16455,7 +16447,7 @@
 /* 91 */
 /***/ function(module, exports) {
 
-	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 class=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 class=\"hinting-title\">{{ hintingTitle2 }}</h2><div id=\"disqus_thread\" name=\"vue-components\"><noscript>Please enable JavaScript to view the <a href=\"http://disqus.com/?ref_noscript\">comments powered by Disqus.</a></noscript>\n<a href=\"http://disqus.com\" class=\"dsq-brlink\" target=\"_blank\">Loading Disqus comments...</a></div>";
+	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 class=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 class=\"hinting-title\">{{ hintingTitle2 }}</h2>";
 
 /***/ },
 /* 92 */
@@ -16940,7 +16932,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.demo-check-area{\n    position: relative;\n    margin: 1% auto;\n}\n", "", {"version":3,"sources":["/./src/_shaveLottery.vue?4d0febaf"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA4HA;IACA,mBAAA;IACA,gBAAA;CACA","file":"_shaveLottery.vue","sourcesContent":["<template lang='jade'>\n    h1#comp-title {{ compTitle }}\n    h2.hinting-title {{ hintingTitle }}\n    <pre-code :code-string=\"codeString\"></pre-code>\n    h2.hinting-title {{ hintingTitle2 }}\n    div.comp-area\n        div.demo-check-area\n            <input type=\"radio\" id=\"radio-one\" value=\"1\" v-model=\"picked\">\n            <label for=\"one\">lotteryType: text</label>\n            <br>\n            <input type=\"radio\" id=\"radio-two\" value=\"2\" v-model=\"picked\">\n            <label for=\"two\">lotteryType: image</label>\n            <br>\n        <shave-lottery :params-list.sync='paramsList'></shave-lottery>\n        normal-dialog\n</template>\n\n<script type=\"text/javascript\">\nimport shaveLottery from 'shaveLottery'\nimport normalDialog from 'normalDialog'\nimport preCode from './preCode.vue'\n\nexport default {\n    data () {\n        return {\n            compTitle : \"Component Name\",\n            hintingTitle: \"使用示例:\",\n            hintingTitle2: \"表现示例:\",\n            picked: 'default',\n            paramsList: {\n                width: 360,\n                height: 356,\n                cover: '#999',\n                coverType: 'color',\n                paintSize: 26,\n                lotteryContent: \"http://www.jeffjade.com\",\n                lotteryType: 'text',\n                callBackFunc: this.onShowNormalDlg\n            },\n            codeString: `\n    import shaveLottery from 'shaveLottery'; //引入组件\n\n    //在模板中如下加入组件即可(定义paramsList传递需要的参数即可)：\n    <shave-lottery :params-list.sync='paramsList'></shave-lottery>\n\n    //在逻辑代码中调用Like This即可；\n    <script type=\"text/javascript\">\n    import shaveLottery from 'shaveLottery'\n    import normalDialog from 'normalDialog'\n\n    export default {\n        data () {\n            return {\n                paramsList: {\n                    width: 360,\n                    height: 356,\n                    cover: '#999',\n                    coverType: 'color',\n                    paintSize: 26,\n                    lotteryContent: \"http://www.jeffjade.com\",\n                    lotteryType: 'text',\n                    callBackFunc: this.onShowNormalDlg\n                }\n            }\n        }\n    }\n    </ script>`\n        }\n    },\n    route:{\n\t\tdata(transition){\n            this.compTitle = transition.to.name\n\t\t}\n\t},\n    watch: {\n        picked: function (newVal, oldVal) {\n        \tif(newVal === '1'){\n                this.paramsList = {\n                    width: 360,\n                    height: 356,\n                    cover: '#999',\n                    coverType: 'color',\n                    paintSize: 26,\n                    lotteryContent: \"www.jeffjade.com\",\n                    lotteryType: 'text',\n                    callBackFunc: this.onShowNormalDlg\n                }\n            }else if(newVal === '2'){\n                this.paramsList = {\n                    width: 360,\n                    height: 356,\n                    cover: '#999',\n                    coverType: 'color',\n                    paintSize: 26,\n                    lotteryContent: 'http://7xoosr.com1.z0.glb.clouddn.com/encourage.png',\n                    lotteryType: 'image',\n                    callBackFunc: this.onShowNormalDlg\n                }\n            }\n        }\n    },\n    components: {\n        shaveLottery,\n        normalDialog,\n        preCode,\n    },\n    methods: {\n        onShowNormalDlg: function( text ){\n            var dlgMsgObj = {\n                titleText: \"&温馨提示&\",       //可不传，默认 “温馨提示”\n                bodyText: text,\n                confirmText: \"确认\",             //可不传，默认 “确认”\n                callBackFunc: null,\n                isShowCloseXFlag: true       //可不传，默认 true\n            }\n\n            // var dlgMsgObj = text;  //如不需更改Dlg默认文案等，可只 文本内容字符串（String）\n            this.$broadcast('show-normal-dlg', dlgMsgObj);\n        }\n    }\n}\n</script>\n\n<style media=\"screen\">\n.demo-check-area{\n    position: relative;\n    margin: 1% auto;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.demo-check-area{\n    position: relative;\n    margin: 1% auto;\n    font-size: 1.3em;\n}\n", "", {"version":3,"sources":["/./src/_shaveLottery.vue?381db11d"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA0IA;IACA,mBAAA;IACA,gBAAA;IACA,iBAAA;CACA","file":"_shaveLottery.vue","sourcesContent":["<template lang='jade'>\n    h1#comp-title {{ compTitle }}\n    h2.hinting-title {{ hintingTitle }}\n    <pre-code :code-string=\"codeString\"></pre-code>\n    h2.hinting-title {{ hintingTitle2 }}\n    div.comp-area\n        div.demo-check-area\n            <input type=\"radio\" id=\"radio-one\" value=\"1\" v-model=\"picked\">\n            <label for=\"one\">lotteryType: text | coverType: color</label>\n            <br>\n            <input type=\"radio\" id=\"radio-two\" value=\"2\" v-model=\"picked\">\n            <label for=\"two\">lotteryType: image | coverType: color</label>\n            <br>\n            <input type=\"radio\" id=\"radio-three\" value=\"3\" v-model=\"picked\">\n            <label for=\"three\">lotteryType: text | coverType: image </label>\n            <br>\n        <shave-lottery :params-list.sync='paramsList'></shave-lottery>\n        normal-dialog\n</template>\n\n<script type=\"text/javascript\">\nimport shaveLottery from 'shaveLottery'\nimport normalDialog from 'normalDialog'\nimport preCode from './preCode.vue'\n\nexport default {\n    data () {\n        return {\n            compTitle : \"Component Name\",\n            hintingTitle: \"使用示例:\",\n            hintingTitle2: \"表现示例:\",\n            picked: 'default',\n            paramsList: {\n                width: 360,\n                height: 356,\n                cover: '#999',\n                coverType: 'color',\n                paintSize: 26,\n                lotteryContent: \"http://www.jeffjade.com\",\n                lotteryType: 'text',\n                callBackFunc: this.onShowNormalDlg\n            },\n            codeString: `\n    import shaveLottery from 'shaveLottery'; //引入组件\n\n    //在模板中如下加入组件即可(定义paramsList传递需要的参数即可)：\n    <shave-lottery :params-list.sync='paramsList'></shave-lottery>\n\n    //在逻辑代码中调用Like This即可；\n    <script type=\"text/javascript\">\n    import shaveLottery from 'shaveLottery'\n    import normalDialog from 'normalDialog'\n\n    export default {\n        data () {\n            return {\n                paramsList: {\n                    width: 360,\n                    height: 356,\n                    cover: '#999',\n                    coverType: 'color',\n                    paintSize: 26,\n                    lotteryContent: \"http://www.jeffjade.com\",\n                    lotteryType: 'text',\n                    callBackFunc: this.onShowNormalDlg\n                }\n            }\n        }\n    }\n    </ script>`\n        }\n    },\n    route:{\n\t\tdata(transition){\n            this.compTitle = transition.to.name\n\t\t}\n\t},\n    watch: {\n        picked: function (newVal, oldVal) {\n        \tif(newVal === '1'){\n                this.paramsList = {\n                    width: 360,\n                    height: 210,\n                    cover: '#999',\n                    coverType: 'color',\n                    paintSize: 20,\n                    lotteryContent: \"www.jeffjade.com\",\n                    lotteryType: 'text',\n                    callBackFunc: this.onShowNormalDlg\n                }\n            }else if(newVal === '2'){\n                this.paramsList = {\n                    width: 360,\n                    height: 356,\n                    cover: '#999',\n                    coverType: 'color',\n                    paintSize: 26,\n                    lotteryContent: 'http://7xoosr.com1.z0.glb.clouddn.com/encourage.png',\n                    lotteryType: 'image',\n                    callBackFunc: this.onShowNormalDlg\n                }\n            }else if(newVal === '3'){\n                this.paramsList = {\n                    width: 300,\n                    height: 188,\n                    cover: 'http://nicejade.github.io/jade/cover.png',\n                    coverType: 'image',\n                    lotteryContent: \"www.jeffjade.com\",\n                    lotteryType: 'text',\n                    paintSize: 26,\n                    callBackFunc: this.onShowNormalDlg\n                }\n            }\n        }\n    },\n    components: {\n        shaveLottery,\n        normalDialog,\n        preCode,\n    },\n    methods: {\n        onShowNormalDlg: function( text ){\n            var dlgMsgObj = {\n                titleText: \"&温馨提示&\",       //可不传，默认 “温馨提示”\n                bodyText: text,\n                confirmText: \"确认\",          //可不传，默认 “确认”\n                callBackFunc: null,\n                isShowCloseXFlag: true       //可不传，默认 true\n            }\n\n            // var dlgMsgObj = text;  //如不需更改Dlg默认文案等，可只 文本内容字符串（String）\n            this.$broadcast('show-normal-dlg', dlgMsgObj);\n        }\n    }\n}\n</script>\n\n<style media=\"screen\">\n.demo-check-area{\n    position: relative;\n    margin: 1% auto;\n    font-size: 1.3em;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -17000,10 +16992,10 @@
 	            if (newVal === '1') {
 	                this.paramsList = {
 	                    width: 360,
-	                    height: 356,
+	                    height: 210,
 	                    cover: '#999',
 	                    coverType: 'color',
-	                    paintSize: 26,
+	                    paintSize: 20,
 	                    lotteryContent: "www.jeffjade.com",
 	                    lotteryType: 'text',
 	                    callBackFunc: this.onShowNormalDlg
@@ -17017,6 +17009,17 @@
 	                    paintSize: 26,
 	                    lotteryContent: 'http://7xoosr.com1.z0.glb.clouddn.com/encourage.png',
 	                    lotteryType: 'image',
+	                    callBackFunc: this.onShowNormalDlg
+	                };
+	            } else if (newVal === '3') {
+	                this.paramsList = {
+	                    width: 300,
+	                    height: 188,
+	                    cover: 'http://nicejade.github.io/jade/cover.png',
+	                    coverType: 'image',
+	                    lotteryContent: "www.jeffjade.com",
+	                    lotteryType: 'text',
+	                    paintSize: 26,
 	                    callBackFunc: this.onShowNormalDlg
 	                };
 	            }
@@ -17048,6 +17051,7 @@
 	// .demo-check-area{
 	//     position: relative;
 	//     margin: 1% auto;
+	//     font-size: 1.3em;
 	// }
 	// </style>
 
@@ -17060,10 +17064,13 @@
 	//     div.comp-area
 	//         div.demo-check-area
 	//             <input type="radio" id="radio-one" value="1" v-model="picked">
-	//             <label for="one">lotteryType: text</label>
+	//             <label for="one">lotteryType: text | coverType: color</label>
 	//             <br>
 	//             <input type="radio" id="radio-two" value="2" v-model="picked">
-	//             <label for="two">lotteryType: image</label>
+	//             <label for="two">lotteryType: image | coverType: color</label>
+	//             <br>
+	//             <input type="radio" id="radio-three" value="3" v-model="picked">
+	//             <label for="three">lotteryType: text | coverType: image </label>
 	//             <br>
 	//         <shave-lottery :params-list.sync='paramsList'></shave-lottery>
 	//         normal-dialog
@@ -17135,7 +17142,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n#shave-lottery{\n    margin: auto;\n}\n.fresh-btn{\n    padding: .2% 3%;\n    background-color: #999;\n    border-radius: 1em;\n    border: 1px solid #000;\n    font-size: 1em;\n    color: #f2f2f2;\n}\n#lottery-container {\n    position:relative;\n    width: 100%;\n    height:360px;\n}\n#draw-percent {\n    color:#F60;\n}\n", "", {"version":3,"sources":["/../components/modules/shaveLottery.vue?f896af32"],"names":[],"mappings":";;;;;;;;;;AAUA;IACA,aAAA;CACA;AACA;IACA,gBAAA;IACA,uBAAA;IACA,mBAAA;IACA,uBAAA;IACA,eAAA;IACA,eAAA;CACA;AACA;IACA,kBAAA;IACA,YAAA;IACA,aAAA;CACA;AACA;IACA,WAAA;CACA","file":"shaveLottery.vue","sourcesContent":["<template>\n    <div id=\"shave-lottery\">\n        <a class=\"fresh-btn\" href='javascript:;' @click='onFreshBtnClick'>刷新</a>\n        <label>已刮开<span id=\"draw-percent\">{{ drawPercent }}</span> 区域。</label>\n        <div id=\"lottery-container\"></div>\n    </div>\n</template>\n\n\n<style media=\"screen\">\n#shave-lottery{\n    margin: auto;\n}\n.fresh-btn{\n    padding: .2% 3%;\n    background-color: #999;\n    border-radius: 1em;\n    border: 1px solid #000;\n    font-size: 1em;\n    color: #f2f2f2;\n}\n#lottery-container {\n    position:relative;\n    width: 100%;\n    height:360px;\n}\n#draw-percent {\n    color:#F60;\n}\n</style>\n\n\n<script type=\"text/javascript\">\nimport {Lottery} from './../../plugin/lottery.js'\n\nexport default {\n\tdata(){\n        return {\n            lottery: \"default\",\n            drawPercent: '0%',\n            succAreaPercent: 50,\n            elementId: 'lottery-container',\n            defaultImage: 'http://7xoosr.com1.z0.glb.clouddn.com/encourage.png',\n        }\n    },\n    ready(){\n        this.updateLottery()\n    },\n    props: ['paramsList'],\n   \twatch: {\n        paramsList: function (newVal, oldVal) {\n            this.updateLottery()\n        }\n    },\n    methods: {\n        getParamsList: function(){\n            let params = {\n                id: this.elementId,\n                cover: this.paramsList.cover || '#CCC',\n                coverType: this.paramsList.coverType || 'cover',\n                width: this.paramsList.width || 300,\n                height: this.paramsList.height || 100,\n                lotteryContent: this.paramsList.lotteryContent || this.defaultImage,\n                lotteryType: this.paramsList.lotteryType || 'image',\n                paintSize: this.paramsList.paintSize || 30,\n                callBackFunc: this.onDrawPercentCallback,\n            }\n            this.succAreaPercent = this.paramsList.succAreaPercent || 50;\n\n            return params\n        },\n\n        updateLottery: function(){\n            var params = this.getParamsList()\n            this.lottery = new Lottery( params );\n            this.lottery.init( this.paramsList.lotteryContent , this.paramsList.lotteryType );\n        },\n        //------------------------------Default Function callBack--------------------------\n        onFreshBtnClick: function(){\n            this.drawPercent = '0%';\n            this.lottery.init( this.paramsList.lotteryContent , this.paramsList.lotteryType );\n        },\n        onDrawPercentCallback: function( drawPercent ){\n            this.drawPercent = drawPercent + '%'\n            if( drawPercent >= this.succAreaPercent  && null != this.paramsList.callBackFunc ){\n                this.paramsList.callBackFunc(\"Okay，刮开的区域占比已超过设定: \" + this.drawPercent )\n            }\n        }\n    },\n    events: {\n    }\n}\n</script>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n#shave-lottery{\n    margin: auto;\n}\n.fresh-btn{\n    padding: .2% 3%;\n    background-color: #999;\n    border-radius: 1em;\n    border: 1px solid #000;\n    font-size: 1em;\n    color: #f2f2f2;\n}\n#lottery-container {\n    position:relative;\n    width: 100%;\n    height: 30%;\n    margin: auto;\n}\n#draw-percent {\n    color:#F60;\n}\n", "", {"version":3,"sources":["/../components/modules/shaveLottery.vue?57a9cef5"],"names":[],"mappings":";;;;;;;;;;AAUA;IACA,aAAA;CACA;AACA;IACA,gBAAA;IACA,uBAAA;IACA,mBAAA;IACA,uBAAA;IACA,eAAA;IACA,eAAA;CACA;AACA;IACA,kBAAA;IACA,YAAA;IACA,YAAA;IACA,aAAA;CACA;AACA;IACA,WAAA;CACA","file":"shaveLottery.vue","sourcesContent":["<template>\n    <div id=\"shave-lottery\">\n        <a class=\"fresh-btn\" href='javascript:;' @click='onFreshBtnClick'>刷新</a>\n        <label>已刮开<span id=\"draw-percent\">{{ drawPercent }}</span> 区域。</label>\n        <div id=\"lottery-container\"></div>\n    </div>\n</template>\n\n\n<style media=\"screen\">\n#shave-lottery{\n    margin: auto;\n}\n.fresh-btn{\n    padding: .2% 3%;\n    background-color: #999;\n    border-radius: 1em;\n    border: 1px solid #000;\n    font-size: 1em;\n    color: #f2f2f2;\n}\n#lottery-container {\n    position:relative;\n    width: 100%;\n    height: 30%;\n    margin: auto;\n}\n#draw-percent {\n    color:#F60;\n}\n</style>\n\n\n<script type=\"text/javascript\">\nimport {Lottery} from './../../plugin/lottery.js'\n\nexport default {\n\tdata(){\n        return {\n            lottery: \"default\",\n            drawPercent: '0%',\n            succAreaPercent: 50,\n            elementId: 'lottery-container',\n            defaultImage: 'http://7xoosr.com1.z0.glb.clouddn.com/encourage.png',\n        }\n    },\n    ready(){\n        this.updateLottery()\n        this.lottery.init( this.paramsList.lotteryContent , this.paramsList.lotteryType );\n    },\n    props: ['paramsList'],\n   \twatch: {\n        paramsList: function (newVal, oldVal) {\n            this.updateLottery()\n        }\n    },\n    methods: {\n        getParamsList: function(){\n            let params = {\n                id: this.elementId,\n                cover: this.paramsList.cover || '#CCC',\n                coverType: this.paramsList.coverType || 'cover',\n                width: this.paramsList.width || 300,\n                height: this.paramsList.height || 100,\n                lotteryContent: this.paramsList.lotteryContent || this.defaultImage,\n                lotteryType: this.paramsList.lotteryType || 'image',\n                paintSize: this.paramsList.paintSize || 30,\n                callBackFunc: this.onDrawPercentCallback,\n            }\n            this.succAreaPercent = this.paramsList.succAreaPercent || 50;\n\n            return params\n        },\n\n        updateLottery: function(){\n            $('#lottery-container').empty()  // switch empty\n\n            var params = this.getParamsList()\n            this.lottery = new Lottery( params );\n            this.lottery.init( this.paramsList.lotteryContent , this.paramsList.lotteryType );\n\n            let lotteryWidth = this.paramsList.width + 'px'\n            let lotteryHeight = this.paramsList.height + 'px'\n            $('#lottery-container').css({'width': lotteryWidth, 'height': lotteryHeight })\n        },\n\n        //------------------------------Default Function callBack--------------------------\n        onFreshBtnClick: function(){\n            this.drawPercent = '0%';\n            this.lottery.init( this.paramsList.lotteryContent , this.paramsList.lotteryType );\n        },\n\n        onDrawPercentCallback: function( drawPercent ){\n            this.drawPercent = drawPercent + '%'\n            if( drawPercent >= this.succAreaPercent  && null != this.paramsList.callBackFunc ){\n                this.paramsList.callBackFunc(\"Okay，刮开的区域占比已超过设定: \" + this.drawPercent )\n            }\n        }\n    },\n    events: {\n    }\n}\n</script>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -17164,6 +17171,7 @@
 	    },
 	    ready: function ready() {
 	        this.updateLottery();
+	        this.lottery.init(this.paramsList.lotteryContent, this.paramsList.lotteryType);
 	    },
 	
 	    props: ['paramsList'],
@@ -17191,15 +17199,23 @@
 	        },
 	
 	        updateLottery: function updateLottery() {
+	            $('#lottery-container').empty(); // switch empty
+	
 	            var params = this.getParamsList();
 	            this.lottery = new _lottery.Lottery(params);
 	            this.lottery.init(this.paramsList.lotteryContent, this.paramsList.lotteryType);
+	
+	            var lotteryWidth = this.paramsList.width + 'px';
+	            var lotteryHeight = this.paramsList.height + 'px';
+	            $('#lottery-container').css({ 'width': lotteryWidth, 'height': lotteryHeight });
 	        },
+	
 	        //------------------------------Default Function callBack--------------------------
 	        onFreshBtnClick: function onFreshBtnClick() {
 	            this.drawPercent = '0%';
 	            this.lottery.init(this.paramsList.lotteryContent, this.paramsList.lotteryType);
 	        },
+	
 	        onDrawPercentCallback: function onDrawPercentCallback(drawPercent) {
 	            this.drawPercent = drawPercent + '%';
 	            if (drawPercent >= this.succAreaPercent && null != this.paramsList.callBackFunc) {
@@ -17236,7 +17252,8 @@
 	// #lottery-container {
 	//     position:relative;
 	//     width: 100%;
-	//     height:360px;
+	//     height: 30%;
+	//     margin: auto;
 	// }
 	// #draw-percent {
 	//     color:#F60;
@@ -17438,7 +17455,7 @@
 /* 110 */
 /***/ function(module, exports) {
 
-	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 class=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 class=\"hinting-title\">{{ hintingTitle2 }}</h2><div class=\"comp-area\"><div class=\"demo-check-area\"><input type=\"radio\" id=\"radio-one\" value=\"1\" v-model=\"picked\">\n<label for=\"one\">lotteryType: text</label>\n<br>\n<input type=\"radio\" id=\"radio-two\" value=\"2\" v-model=\"picked\">\n<label for=\"two\">lotteryType: image</label>\n<br></div><shave-lottery :params-list.sync='paramsList'></shave-lottery><normal-dialog></normal-dialog></div>";
+	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 class=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 class=\"hinting-title\">{{ hintingTitle2 }}</h2><div class=\"comp-area\"><div class=\"demo-check-area\"><input type=\"radio\" id=\"radio-one\" value=\"1\" v-model=\"picked\">\n<label for=\"one\">lotteryType: text | coverType: color</label>\n<br>\n<input type=\"radio\" id=\"radio-two\" value=\"2\" v-model=\"picked\">\n<label for=\"two\">lotteryType: image | coverType: color</label>\n<br>\n<input type=\"radio\" id=\"radio-three\" value=\"3\" v-model=\"picked\">\n<label for=\"three\">lotteryType: text | coverType: image </label>\n<br></div><shave-lottery :params-list.sync='paramsList'></shave-lottery><normal-dialog></normal-dialog></div>";
 
 /***/ }
 /******/ ]);
