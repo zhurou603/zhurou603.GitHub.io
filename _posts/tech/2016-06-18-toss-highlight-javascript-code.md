@@ -34,6 +34,7 @@ window.onhashchange = function(){
 </script>
 ```
 这其中使用了 **onhashchange**，这是一个HTML 5新增的事件，当#值发生变化时，就会触发这个事件。IE8+、Firefox 3.6+、Chrome 5+、Safari 4.0+支持该事件。如此，虽然可以了，可是也每次切换路由，就得刷新下这个url地址，十分破坏体验。又是一番搜索之后，找见了[SyntaxHighlighter](http://alexgorbatchev.com/SyntaxHighlighter/)，只因为从搜索情况来看，它提供了处理类似需求的API，所以就有了如下用法：
+
 ```
 <head>
 <link href="http://cdn.bootcss.com/SyntaxHighlighter/3.0.83/styles/shCoreFadeToGrey.min.css" rel="stylesheet">
@@ -54,6 +55,7 @@ window.onhashchange = function(){
 ```
 
 不过使用它的时候，略有点麻烦，需要为承载代码的dom节点添加对应的class（brush: js）,因此所写的代码高亮组件 template 部分就是这样的了;不过这也不麻烦，就暂且如此处理好了；
+
 ```
 <template lang='jade'>
     pre#pre-wrapper(class="brush: js") {{ codeString }}
