@@ -23,7 +23,7 @@ description: 记录下给 http://nicejade.github.io/jade/vue-jade-components-dem
 </body>
 ```
 
-这样本没有什么问题的；可所用到的页面本就一个，只是用了 **vue-router** 来切换页面显示的。而 highlight 对于页面代码高亮的处理方式，目测没有监听到Url地址hash部分变化；如此，当切换到新页面时候，新页面的代码就不会高亮；找了其相关APi，并未能，找见类似处理方案；只能采取如此如下办法：
+这样本没有什么问题的；可所用到的页面本就一个，只是用了 **vue-router** 来切换页面显示。而 highlight 对于页面代码高亮的处理方式，目测没有监听到Url地址hash部分变化；如此，当切换到新页面时候，新页面的代码就不会高亮；找了其相关APi，并未能，找见类似处理方案；只能采取如此如下办法：
 
 ```
 <script>
@@ -54,11 +54,11 @@ window.onhashchange = function(){
 </script>
 ```
 
-不过使用它的时候，略有点麻烦，需要为承载代码的dom节点添加对应的class（brush: js）,因此所写的代码高亮组件 template 部分就是这样的了;不过这也不麻烦，就暂且如此处理好了；
+不过使用它的时候，略有点麻烦，需要为承载代码的dom节点添加对应的 class（brush: js）,因此所写的代码高亮组件 template 部分就是这样的了;不过这也不麻烦，就暂且如此处理了。
 
 ```
 <template lang='jade'>
-    pre#pre-wrapper(class="brush: js") {{ codeString }}
+    pre#pre-wrapper(class="brush: js") ｛{{ codeString ｝}}
     hr
 </template>
 ```
