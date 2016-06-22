@@ -58,7 +58,7 @@ window.onhashchange = function(){
 
 ```
 <template lang='jade'>
-    pre#pre-wrapper(class="brush: js") ｛{{ codeString ｝}}
+    pre#pre-wrapper(class="brush: js") ｛ { { codeString ｝} }
     hr
 </template>
 ```
