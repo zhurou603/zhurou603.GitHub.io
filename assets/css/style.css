@@ -433,6 +433,9 @@ blockquote {
   border-left: 5px solid #00ffc1;
   background-color: rgba(230, 232, 250, 0.9); }
 
+blockquote > p {
+  padding: 1%; }
+
 kbd {
   padding: .2em .3em .1em;
   font-size: .75em;
