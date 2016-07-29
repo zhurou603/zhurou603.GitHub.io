@@ -21,26 +21,23 @@ $border:          #e5e8ec;
 
 $tags-fg:         #A6A6A7;
 $tags-hover-fg:   #F7F7F7;
-$tags-active-fg:  $black;
-$tags-bg:         #474D57;
+$tags-active-fg:  #65c294;  //RuoZhu-Color
+$tags-bg:         #009ad6;
 
-$pl-bg:           #fafafa; // pl: posts-list
+$pl-bg:           #111111; // pl: posts-list
 
 $pl-input-fg:     $green;
-$pl-input-ph:     #cbcbcb; // input placeholder foreground colour
+$pl-input-ph:     #111111; // input placeholder foreground colour
 $pl-input-bg:     darken($pl-bg, 1%);
 
 $pl-link-fg:      darken($grey, 10%);
-$pl-hover-bg:     transparentize(darken($pl-bg, 3%), .5);
+$pl-hover-bg:     transparentize(darken($pl-bg, 33%), .5);
 $pl-active-fg:    darken($green, 5%);
 
-$post-fg:         #2C353D;
-$post-bg:         #fff;
-$post-link:       $grey;
+$post-fg:         #f2f2f2;
+$post-bg:         #000;
+$post-link:       #268bd2;
 $post-hover:      $green;
-
-$img-bd:          $border;
-$blockquote-bd:   $border;
 
 $inline-code-bd:  $border;
 $inline-code-fg:  #000;
@@ -56,7 +53,13 @@ $share-bd:        transparentize($border, .5);
 
 $fs-fg:           $grey; // fs: fullscreen
 $fs-hover:        $green;
-$fs-bg:           transparentize($border, .5);
+$fs-bg:           transparentize(#fe0 , .2);
+
+$green-border-left: #00ffc1;
+$grey-bg-color:   rgba(230,232,250,.9);
+
+$img-bd:          $border;
+$blockquote-bd:   $green-border-left;
 
 //------- {{ dimensions }} -------//
 
@@ -66,7 +69,7 @@ $sidebar-width:   $tags-width + $pl-width;
 
 $search-height:   65px;
 
-$fullscreen-width:800px;
+$fullscreen-width:1024px;
 
 //------- {{ nprogress-colour }} -------//
 
@@ -126,6 +129,8 @@ html, body {
   -webkit-font-smoothing: subpixel-antialiased;
   -webkit-text-size-adjust: none;
   overflow: hidden;
+  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  letter-spacing: .6px;
 }
 
 a {
@@ -204,9 +209,10 @@ a {
   width: 100px;
   height: 100px;
   margin: 55px auto 35px;
-  background: url(/assets/img/avatar.png);
   border-radius: 50%;
   box-shadow: 0 0 0px 4px white, 0 0 4px 4px #eee;
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
   overflow: hidden;
   display: block;
   &:hover {
@@ -244,7 +250,7 @@ a {
     color: $tags-active-fg;
     background: $pl-bg;
     border-right: 1px solid $pl-bg;
-    border-radius: 5px 0 0 5px;
+    // border-radius: 5px 0 0 5px;
     position: relative;
     -webkit-transition: none;
     -moz-transition: none;
@@ -331,8 +337,8 @@ a {
 #posts-list {
   width: $pl-width;
   height: 100%;
-  background: transparentize($pl-bg, 0.05);
-  border-right: 1px solid $border;
+  background: transparentize($pl-bg, 0);
+  // border-right: 1px solid $border;
   float: left;
   position: relative;
   -webkit-user-select: none;
@@ -350,7 +356,7 @@ a {
 #search-form {
   width: 100%;
   height: $search-height;
-  border-bottom: 1px solid $border;
+  // border-bottom: 1px solid $border;
   @media screen and (max-width: $sidebar-width) {
     height: 51px;
     display: -webkit-flex;
@@ -374,11 +380,11 @@ a {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 20px 20px 0;
+  padding: 0 0 0px 20px;
   color: $pl-input-fg;
   font-size: 18px;
   font-family: inherit;
-  background: $pl-input-bg;
+  background: $grey-bg-color;
   border: none;
   outline: none;
   -webkit-appearance: none;
@@ -386,18 +392,18 @@ a {
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
-  cursor: not-allowed;
+  // cursor: not-allowed;
   &::-webkit-input-placeholder {
     color: $pl-input-ph;
-    font-style: italic;
+    // font-style: italic;
   }
   &::-moz-placeholder {
     color: $pl-input-ph;
-    font-style: italic;
+    // font-style: italic;
   }
   &:-ms-input-placeholder {
     color: $pl-input-ph;
-    font-style: italic;
+    // font-style: italic;
   }
   @media screen and (max-width: $sidebar-width) {
     padding: 10px 10px 0;
@@ -455,7 +461,7 @@ a {
   &.active {
     color: $pl-active-fg;
     background: $pl-hover-bg;
-    box-shadow: -1px 1px transparentize($border, 0.1);
+    // box-shadow: -1px 1px transparentize($border, 0.1);
     > .pl__circle {
       background: $pl-hover-bg;
       border-color: $pl-active-fg;
@@ -493,7 +499,7 @@ a {
 #post {
   height: 100%;
   color: $post-fg;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   background: $post-bg;
   overflow-x: hidden;
@@ -515,7 +521,7 @@ a {
 }
 
 #pjax {
-  padding: 0 5% 30px;
+  padding: 0 5%;
   &.fadeIn {
     -webkit-animation: fadeIn .3s;
     -moz-animation: fadeIn .3s;
@@ -532,6 +538,7 @@ a {
   }
   @media screen and (min-width: 1281px) {
     max-width: 100%;
+    padding: 0 10%;
   }
   @media screen and (max-width: 1280px) {
     max-width: $fullscreen-width;
@@ -539,7 +546,7 @@ a {
   }
 }
 
-//------- {{ post__content }} -------//
+//------- {{ ontent }} -------//
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
@@ -549,6 +556,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding-top: 1.1em;
   font-size: 2em;
+  text-align: center;
 }
 
 #post__content {
@@ -566,15 +574,28 @@ h1, h2, h3, h4, h5, h6 {
     color: $post-link;
     word-break: break-all;
     &:hover {
-      // color: $post-hover;
+      color: $post-hover;
       text-decoration: underline;
     }
   }
   img {
+    width: 100%;
     max-width: 100%;
     max-height: 500px;
-    border: 2px solid $img-bd;
+    // border: 2px solid $img-bd;
     border-radius: 5px;
+  }
+  > pre{
+      padding: 0;
+      border: 0px solid #000;
+      border-left: 5px solid $green-border-left;
+      background-color: $grey-bg-color;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      color: forestgreen;
+  }
+  > p > code{
+
   }
 }
 strong {
@@ -583,7 +604,9 @@ strong {
 blockquote {
   margin: 1.5em 0 1.5em 2em;
   padding-left: .5em;
+  color: #666;
   border-left: 5px solid $blockquote-bd;
+  background-color: $grey-bg-color;
 }
 kbd {
   padding: .2em .3em .1em;
@@ -813,6 +836,7 @@ iframe {
 #pjax.fullscreen {
   max-width: $fullscreen-width;
   margin: 0 auto;
+  padding: 0 2%;
 }
 
 %fixed-btn-size {
@@ -838,6 +862,8 @@ iframe {
   outline: none;
   cursor: pointer;
   position: fixed;
+  top: 1em;
+  right: 3em;
   -webkit-transition: box-shadow .35s;
   -moz-transition: box-shadow .35s;
   -ms-transition: box-shadow .35s;

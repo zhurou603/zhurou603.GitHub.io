@@ -60,10 +60,9 @@ pre > code {
 /* Inline code */
 :not(pre) > code {
   padding: .25em .5em .1em;
-  color: $inline-code-fg;
   font: .85em Consolas, Monaco, 'Andale Mono', monospace;
-  background: $inline-code-bg;
-  border: 1px solid $inline-code-bd;
+  color: #ed1941;
+  border: 1px solid #666;
   border-radius: .25em;
   vertical-align: 2px;
 }
