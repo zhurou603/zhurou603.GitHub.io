@@ -44,6 +44,8 @@ $('.pl__all').on('click', function() {
   $(this).addClass('active').siblings().removeClass('active');
   if( !isWeiXin() ){
     location.reload();
+  }else{
+    $('#sidebar, #pjax, #icon-arrow').addClass('fullscreen');
   }
 });
 
