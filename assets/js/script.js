@@ -29,13 +29,22 @@ $('#tags__ul li').each(function(index){
   $('#' + $(this).attr('id')).on('click', clickHandler($(this).attr('id')));
 });
 
+//判断是否是微信浏览器
+function isWeiXin(){
+    var ua = window.navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+        return true;
+    }else{
+        return false;
+    }
+}
+
 // If sidebar has class 'mobile', hide it after clicking.
 $('.pl__all').on('click', function() {
   $(this).addClass('active').siblings().removeClass('active');
-  // if (sidebar.hasClass('mobile')) {
-  //   $('#sidebar, #pjax, #icon-arrow').addClass('fullscreen');
-  // }
-  location.reload();
+  if( !isWeiXin() ){
+    location.reload();
+  }
 });
 
 $(document).ready(function() {
