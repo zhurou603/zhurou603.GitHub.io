@@ -16,10 +16,11 @@ $red:             #F8645A;
 $green:           #2EB695;
 $grey:            #7D8B99;
 $black:           #020202;
+$e2e2e2:          #e2e2e2;
 
 $border:          #e5e8ec;
 
-$tags-fg:         #A6A6A7;
+$tags-fg:         $e2e2e2;
 $tags-hover-fg:   #F7F7F7;
 $tags-active-fg:  #65c294;  //RuoZhu-Color
 $tags-bg:         #009ad6;
@@ -30,7 +31,7 @@ $pl-input-fg:     $green;
 $pl-input-ph:     #111111; // input placeholder foreground colour
 $pl-input-bg:     darken($pl-bg, 1%);
 
-$pl-link-fg:      darken($grey, 10%);
+$pl-link-fg:      darken($e2e2e2, 10%);
 $pl-hover-bg:     transparentize(darken($pl-bg, 33%), .5);
 $pl-active-fg:    darken($green, 5%);
 
@@ -51,9 +52,9 @@ $flash:           $red;
 $share-fg:        $grey;
 $share-bd:        transparentize($border, .5);
 
-$fs-fg:           $grey; // fs: fullscreen
+$fs-fg:           #373c42; // fs: fullscreen
 $fs-hover:        $green;
-$fs-bg:           transparentize(#fe0 , .2);
+$fs-bg:           transparentize(rgb(194,245,89) , .2);
 
 $green-border-left: #00ffc1;
 $grey-bg-color:   rgba(230,232,250,.9);
@@ -239,6 +240,7 @@ a {
   border-top: 1px solid darken($tags-bg, 5%);
   border-bottom: 1px solid lighten($tags-bg, 5%);
   list-style: none;
+  text-align: center;
 }
 .tags__li {
   padding: 12px 35px 9px;
@@ -346,6 +348,7 @@ a {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+  letter-spacing: 1px;
   @media screen and (max-width: $sidebar-width) {
     width: 100%;
   }
@@ -865,8 +868,8 @@ iframe {
   outline: none;
   cursor: pointer;
   position: fixed;
-  top: 1em;
-  right: 3em;
+  top: 12px;
+  right: 20px;
   -webkit-transition: box-shadow .35s;
   -moz-transition: box-shadow .35s;
   -ms-transition: box-shadow .35s;

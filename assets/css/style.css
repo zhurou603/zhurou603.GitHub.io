@@ -131,7 +131,8 @@ a {
   font-size: 17px;
   border-top: 1px solid #0088bd;
   border-bottom: 1px solid #00acf0;
-  list-style: none; }
+  list-style: none;
+  text-align: center; }
 
 .tags__li {
   padding: 12px 35px 9px;
@@ -197,7 +198,7 @@ a {
     content: "\e802"; }
 
 .tags-btn {
-  color: #A6A6A7;
+  color: #e2e2e2;
   -webkit-transition: color .3s, background .3s;
   -moz-transition: color .3s, background .3s;
   -ms-transition: color .3s, background .3s;
@@ -220,7 +221,8 @@ a {
   -moz-user-select: none;
   -ms-user-select: none;
   -o-user-select: none;
-  user-select: none; }
+  user-select: none;
+  letter-spacing: 1px; }
   @media screen and (max-width: 585px) {
     #posts-list {
       width: 100%; } }
@@ -278,7 +280,7 @@ a {
 #pl__container {
   padding-top: 7px;
   padding-bottom: 10px;
-  color: #64727f;
+  color: #c9c9c9;
   text-shadow: -1px 1px 0 rgba(125, 139, 153, 0.1);
   overflow-x: hidden;
   overflow-y: auto;
@@ -325,8 +327,8 @@ a {
   width: .75em;
   height: .75em;
   margin-right: 5px;
-  background: #9aa5af;
-  border: 2px solid #9aa5af;
+  background: #fcfcfc;
+  border: 2px solid #fcfcfc;
   border-radius: 50%;
   display: inline-block;
   -webkit-transition: border-color .35s;
@@ -336,7 +338,7 @@ a {
   transition: border-color .35s; }
 
 .pl__date {
-  color: #9aa5af;
+  color: #fcfcfc;
   font-size: 14px;
   float: right; }
 
@@ -641,16 +643,16 @@ iframe {
 #js-fullscreen {
   margin: 0;
   padding: 0;
-  color: #7D8B99;
-  background: rgba(255, 238, 0, 0.8);
+  color: #373c42;
+  background: rgba(194, 245, 89, 0.8);
   border-radius: 50%;
   border: none;
   box-shadow: 0 0 10px 10px transparent;
   outline: none;
   cursor: pointer;
   position: fixed;
-  top: 1em;
-  right: 3em;
+  top: 12px;
+  right: 20px;
   -webkit-transition: box-shadow .35s;
   -moz-transition: box-shadow .35s;
   -ms-transition: box-shadow .35s;
