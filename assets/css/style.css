@@ -428,7 +428,7 @@ a {
     margin-left: -36px;
     margin-right: -36px;
     padding-right: 36px;
-    background-color: transparent; }
+    background-color: #23241F; }
   #post__content > pre > code {
     margin-right: -36px;
     padding-left: 36px; }
@@ -956,17 +956,15 @@ h4::before {
 pre {
   padding: 0;
   font: .9em/1.5 Consolas, Monaco, 'Andale Mono', monospace;
-  border-radius: 3px;
-  background-color: #fdfdfd;
-  background-image: -webkit-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
-  background-image: -moz-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
-  background-image: -ms-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
-  background-image: -o-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
-  background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
   background-size: 3em 3em;
   background-origin: content-box;
   overflow: auto;
-  -webkit-overflow-scrolling: touch; }
+  -webkit-overflow-scrolling: touch;
+  margin-left: -72px;
+  margin-left: -36px;
+  margin-right: -36px;
+  padding-right: 36px;
+  background-color: #23241F; }
   pre::-webkit-scrollbar {
     height: 7px; }
   pre::-webkit-scrollbar-thumb {
@@ -986,7 +984,9 @@ pre > code {
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
-  hyphens: none; }
+  hyphens: none;
+  margin-right: -36px;
+  padding-left: 36px; }
 
 /* Inline code */
 :not(pre) > code {

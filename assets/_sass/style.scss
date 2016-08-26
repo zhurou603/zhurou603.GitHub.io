@@ -51,6 +51,7 @@ $flash:           $red;
 
 $share-fg:        $grey;
 $share-bd:        transparentize($border, .5);
+$highlight-bg:    #23241F;
 
 $fs-fg:           #373c42; // fs: fullscreen
 $fs-hover:        $green;
@@ -601,7 +602,7 @@ a {
       margin-left: -($page-margin-width);
       margin-right: -($page-margin-width);
       padding-right: $page-margin-width;
-      background-color: transparent;
+      background-color: $highlight-bg;
   }
   > pre > code{
     margin-right: -($page-margin-width);
