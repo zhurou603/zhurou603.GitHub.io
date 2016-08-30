@@ -983,7 +983,7 @@ h4::before{
     font-weight: bolder;
 }
 .hljs{
-    padding-left: $page-margin-width;
+    padding-left: $page-margin-width !important;
 }
 /*---------------------------------*\
    Vendors
