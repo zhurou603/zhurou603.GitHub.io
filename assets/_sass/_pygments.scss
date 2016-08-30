@@ -14,7 +14,9 @@ $page-margin-width: 36px;
   margin-left: -($page-margin-width);
   margin-right: -($page-margin-width);
 }
-
+.hljs{
+    padding-left: $page-margin-width;
+}
 pre {
   padding: 0;
   font: .9em/1.5 Consolas, Monaco, 'Andale Mono', monospace;
