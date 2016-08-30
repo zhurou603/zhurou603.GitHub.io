@@ -758,6 +758,9 @@ h4::before {
   color: #2EB695;
   font-weight: bolder; }
 
+.hljs {
+  padding-left: 36px; }
+
 /*---------------------------------*\
    Vendors
 \*---------------------------------*/
@@ -954,9 +957,6 @@ h4::before {
 .highlight {
   margin-left: -36px;
   margin-right: -36px; }
-
-.hljs {
-  padding-left: 36px; }
 
 pre {
   padding: 0;

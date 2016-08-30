@@ -982,6 +982,9 @@ h4::before{
     color: $green;
     font-weight: bolder;
 }
+.hljs{
+    padding-left: $page-margin-width;
+}
 /*---------------------------------*\
    Vendors
 \*---------------------------------*/
