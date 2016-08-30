@@ -424,14 +424,13 @@ a {
     background-color: rgba(230, 232, 250, 0.9);
     border-radius: 0;
     color: forestgreen;
-    margin-left: -72px;
     margin-left: -36px;
     margin-right: -36px;
     padding-right: 36px;
     background-color: #23241F; }
   #post__content > pre > code {
     margin-right: -36px;
-    padding-left: 36px; }
+    padding-left: 36px !important; }
 
 strong {
   font-weight: 700;
@@ -441,7 +440,6 @@ strong {
 blockquote {
   color: #7D8B99;
   background-color: rgba(230, 232, 250, 0.9);
-  margin-left: -72px;
   margin-left: -36px;
   margin-right: -36px;
   padding-right: 36px;
@@ -451,6 +449,9 @@ blockquote {
 blockquote > p {
   margin-right: 0;
   padding-left: 36px; }
+
+blockquote > ol > li > code {
+  background-color: #7D8B99 !important; }
 
 kbd {
   padding: .2em .3em .1em;
@@ -951,20 +952,22 @@ h4::before {
 /*! Modified by Peiwen Lu @ 30 Nov 2013 */
 /* Code blocks */
 .highlight {
-  margin: 1.715em 0; }
+  margin-left: -36px;
+  margin-right: -36px; }
 
 pre {
   padding: 0;
   font: .9em/1.5 Consolas, Monaco, 'Andale Mono', monospace;
+  border-radius: 3px;
+  background-color: #fdfdfd;
   background-size: 3em 3em;
   background-origin: content-box;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  margin-left: -72px;
   margin-left: -36px;
   margin-right: -36px;
   padding-right: 36px;
-  background-color: #23241F; }
+  background-color: #23241F !important; }
   pre::-webkit-scrollbar {
     height: 7px; }
   pre::-webkit-scrollbar-thumb {
@@ -990,11 +993,13 @@ pre > code {
 
 /* Inline code */
 :not(pre) > code {
-  padding: .25em .5em .1em;
-  font: .85em Consolas, Monaco, 'Andale Mono', monospace;
+  padding: .25em 0;
+  margin: 0 0.2em;
+  font: .86em Consolas, Monaco, 'Andale Mono', monospace;
   color: #ed1941;
   border-radius: .25em;
-  vertical-align: 2px; }
+  vertical-align: 2px;
+  background-color: #000; }
 
 .highlight .c {
   color: #586E75; }
