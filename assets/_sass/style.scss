@@ -1005,9 +1005,9 @@ h4::before{
   #post__content{
     padding: $mobile-page-margin-width;
   }
-  .highlight {
-    margin-left: -($mobile-page-margin-width);
-    margin-right: -($mobile-page-margin-width);
+  pre.highlight {
+    margin-left: -($mobile-page-margin-width) !important;
+    margin-right: -($mobile-page-margin-width) !important;
   }
   #post__content > pre{
     margin-left: -$mobile-page-margin-width;

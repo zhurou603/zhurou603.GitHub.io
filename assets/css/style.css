@@ -777,9 +777,9 @@ h4::before {
   #post__content {
     padding: 9px; }
 
-  .highlight {
-    margin-left: -9px;
-    margin-right: -9px; }
+  pre.highlight {
+    margin-left: -9px !important;
+    margin-right: -9px !important; }
 
   #post__content > pre {
     margin-left: -9px;
