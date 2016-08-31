@@ -443,8 +443,12 @@ blockquote {
   margin-left: -36px;
   margin-right: -36px;
   padding-right: 36px;
+  padding-left: 36px;
   padding-top: 10px;
   padding-bottom: 10px; }
+
+blockquote > ol {
+  padding: 0px 18px; }
 
 blockquote > p {
   margin-right: 0;
@@ -761,6 +765,30 @@ h4::before {
 .hljs {
   padding-left: 36px !important; }
 
+@media screen and (max-width: 768px) {
+  .hljs {
+    padding-left: 9px !important; }
+
+  blockquote {
+    margin-left: -9px;
+    margin-right: -9px;
+    padding-right: 9px; }
+
+  #post__content {
+    padding: 9px; }
+
+  .highlight {
+    margin-left: -9px;
+    margin-right: -9px; }
+
+  #post__content > pre {
+    margin-left: -9px;
+    margin-right: -9px;
+    padding-right: 9px; }
+
+  #post__content > pre > code {
+    margin-right: -9px;
+    padding-left: 9px !important; } }
 /*---------------------------------*\
    Vendors
 \*---------------------------------*/
@@ -996,11 +1024,11 @@ pre > code {
 
 /* Inline code */
 :not(pre) > code {
-  padding: .25em 0;
+  padding: .25em .2em;
   margin: 0 0.2em;
   font: .86em Consolas, Monaco, 'Andale Mono', monospace;
   color: #ed1941;
-  border-radius: .25em;
+  border-radius: 0;
   vertical-align: 2px;
   background-color: #000; }
 

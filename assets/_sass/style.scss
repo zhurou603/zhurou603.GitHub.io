@@ -74,6 +74,8 @@ $search-height:   65px;
 $fullscreen-width:1024px;
 
 $page-margin-width: 36px;
+$mobile-page-margin-width: 9px;
+$mobile-width:      768px;
 //------- {{ nprogress-colour }} -------//
 
 $nprogress:       $red;
@@ -620,8 +622,12 @@ blockquote {
   margin-left: -($page-margin-width);
   margin-right: -($page-margin-width);
   padding-right: $page-margin-width;
+  padding-left: $page-margin-width;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+blockquote > ol {
+  padding: 0px 18px;
 }
 blockquote > p{
   margin-right: 0;
@@ -982,8 +988,36 @@ h4::before{
     color: $green;
     font-weight: bolder;
 }
+
 .hljs{
-    padding-left: $page-margin-width !important;
+  padding-left: $page-margin-width !important;
+}
+
+@media screen and (max-width: $mobile-width) {
+  .hljs{
+    padding-left: $mobile-page-margin-width !important;
+  }
+  blockquote{
+    margin-left: -($mobile-page-margin-width);
+    margin-right: -($mobile-page-margin-width);
+    padding-right: $mobile-page-margin-width;
+  }
+  #post__content{
+    padding: $mobile-page-margin-width;
+  }
+  .highlight {
+    margin-left: -($mobile-page-margin-width);
+    margin-right: -($mobile-page-margin-width);
+  }
+  #post__content > pre{
+    margin-left: -$mobile-page-margin-width;
+    margin-right: -$mobile-page-margin-width;
+    padding-right: $mobile-page-margin-width;
+  }
+  #post__content > pre > code{
+    margin-right: -($mobile-page-margin-width);
+    padding-left: ($mobile-page-margin-width) !important;
+  }
 }
 /*---------------------------------*\
    Vendors

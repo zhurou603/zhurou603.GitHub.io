@@ -66,12 +66,12 @@ pre > code {
 
 /* Inline code */
 :not(pre) > code{
-  padding: .25em 0;
+  padding: .25em .2em;
   margin: 0 0.2em;
   font: .86em Consolas, Monaco, 'Andale Mono', monospace;
   color: #ed1941;
   // border: 1px solid #666;
-  border-radius: .25em;
+  border-radius: 0;
   vertical-align: 2px;
   background-color: #000;
 }
