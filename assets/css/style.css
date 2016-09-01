@@ -772,7 +772,11 @@ h4::before {
   blockquote {
     margin-left: -9px;
     margin-right: -9px;
+    padding-left: 9px;
     padding-right: 9px; }
+
+  blockquote > p {
+    padding-left: 9px; }
 
   #post__content {
     padding: 9px; }

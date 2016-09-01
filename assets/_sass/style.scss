@@ -1000,7 +1000,11 @@ h4::before{
   blockquote{
     margin-left: -($mobile-page-margin-width);
     margin-right: -($mobile-page-margin-width);
+    padding-left: $mobile-page-margin-width;
     padding-right: $mobile-page-margin-width;
+  }
+  blockquote > p{
+    padding-left: $mobile-page-margin-width;
   }
   #post__content{
     padding: $mobile-page-margin-width;
