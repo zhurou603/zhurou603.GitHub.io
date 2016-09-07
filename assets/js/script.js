@@ -43,7 +43,7 @@ function isWeiXin(){
 $('.pl__all').on('click', function() {
   $(this).addClass('active').siblings().removeClass('active');
   if( !isWeiXin() ){
-    location.reload();
+    setTimeout(function(){location.reload(true);},0);
   }else{
     $('#sidebar, #pjax, #icon-arrow').addClass('fullscreen');
   }

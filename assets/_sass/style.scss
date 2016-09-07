@@ -26,6 +26,7 @@ $tags-active-fg:  #65c294;  //RuoZhu-Color
 $tags-bg:         #009ad6;
 
 $pl-bg:           #111111; // pl: posts-list
+$strong-blue:     #3bffff; //Strong-蓝色
 
 $pl-input-fg:     $green;
 $pl-input-ph:     #111111; // input placeholder foreground colour
@@ -507,7 +508,7 @@ a {
   height: 100%;
   color: $post-fg;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.7;
   background: $post-bg;
   overflow-x: hidden;
   overflow-y: auto;
@@ -612,12 +613,11 @@ a {
 }
 strong {
     font-weight: 700;
-    color: #888;
+    color: $strong-blue;
     text-shadow: 0 0px 1px #111;
 }
 blockquote {
-  color: $grey;
-  // border-left: 5px solid $blockquote-bd;
+  color: $black;
   background-color: $grey-bg-color;
   margin-left: -($page-margin-width);
   margin-right: -($page-margin-width);
@@ -631,7 +631,7 @@ blockquote > ol {
 }
 blockquote > p{
   margin-right: 0;
-  padding-left: $page-margin-width;
+  padding-left: 0;
 }
 blockquote > ol > li > code{
     background-color: $grey !important;
@@ -1002,9 +1002,6 @@ h4::before{
     margin-right: -($mobile-page-margin-width);
     padding-left: $mobile-page-margin-width;
     padding-right: $mobile-page-margin-width;
-  }
-  blockquote > p{
-    padding-left: $mobile-page-margin-width;
   }
   #post__content{
     padding: $mobile-page-margin-width;
