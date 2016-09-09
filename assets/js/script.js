@@ -56,8 +56,10 @@ $(document).ready(function() {
 
   //@09-09 监听Ctrl+Enter || Enter键--以打开或关闭左边SideBar---Start;
   document.onkeydown=function(event){
-　　 if(13 == event.keyCode && event.ctrlKey || (13 == event.keyCode)){
-        openOrCloseSidebar()
+　　 if(13 == event.keyCode && event.ctrlKey){
+        openOrCloseSidebar(true)
+    }else if(13 == event.keyCode){
+        openOrCloseSidebar(false)
     }
 　}
   //@09-09 监听Ctrl+Enter || Enter键--以打开或关闭左边SideBar----End;
@@ -81,14 +83,16 @@ $('#search-input').on('input', function(e){
 });
 //Modify On-2016-02-26.-----------------End
 
-function openOrCloseSidebar(){
+function openOrCloseSidebar(isFocus){
     if (button.hasClass('fullscreen')) {
       sidebar.removeClass('fullscreen');
       button.removeClass('fullscreen');
       content.delay(300).queue(function(){
         $(this).removeClass('fullscreen').dequeue();
       });
-      setTimeout(function(){document.getElementById('search-input').focus();},0)
+      if(isFocus){
+        setTimeout(function(){document.getElementById('search-input').focus();},0)
+      }
     } else {
       sidebar.addClass('fullscreen');
       button.addClass('fullscreen');
