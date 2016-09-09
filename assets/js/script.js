@@ -53,6 +53,14 @@ $(document).ready(function() {
   if (sidebar.hasClass('mobile')) {
     $('#sidebar, #pjax, #icon-arrow').addClass('fullscreen');
   }
+
+  //@09-09 监听Ctrl+Enter || Enter键--以打开或关闭左边SideBar---Start;
+  document.onkeydown=function(event){
+　　 if(13 == event.keyCode && event.ctrlKey || (13 == event.keyCode)){
+        openOrCloseSidebar()
+    }
+　}
+  //@09-09 监听Ctrl+Enter || Enter键--以打开或关闭左边SideBar----End;
 });
 
 //Modify On-2016-02-26.-----------------Start
@@ -73,21 +81,26 @@ $('#search-input').on('input', function(e){
 });
 //Modify On-2016-02-26.-----------------End
 
+function openOrCloseSidebar(){
+    if (button.hasClass('fullscreen')) {
+      sidebar.removeClass('fullscreen');
+      button.removeClass('fullscreen');
+      content.delay(300).queue(function(){
+        $(this).removeClass('fullscreen').dequeue();
+      });
+      setTimeout(function(){document.getElementById('search-input').focus();},0)
+    } else {
+      sidebar.addClass('fullscreen');
+      button.addClass('fullscreen');
+      content.delay(200).queue(function(){
+        $(this).addClass('fullscreen').dequeue();
+      });
+    }
+}
+
 // Enable fullscreen.
 $('#js-fullscreen').on('click', function() {
-  if (button.hasClass('fullscreen')) {
-    sidebar.removeClass('fullscreen');
-    button.removeClass('fullscreen');
-    content.delay(300).queue(function(){
-      $(this).removeClass('fullscreen').dequeue();
-    });
-  } else {
-    sidebar.addClass('fullscreen');
-    button.addClass('fullscreen');
-    content.delay(200).queue(function(){
-      $(this).addClass('fullscreen').dequeue();
-    });
-  }
+    openOrCloseSidebar()
 });
 
 $('#mobile-avatar').on('click', function(){
