@@ -62,6 +62,33 @@ if (model === 'POST'){
 }
 ```
 
+### vue-resource设置timeout回调？
+在文档 [vue-resource | Interceptors](https://github.com/vuejs/vue-resource/blob/master/docs/http.md) 中，已经阐明了`Interceptors`(拦截器)的作用：
+
+>Interceptors can be defined globally and are used for pre- and postprocessing of a request.
+
+所以可以自己实现一个 `timeout interceptor` 的流程，据此实现你想要的需求；比如像这样：
+```
+Vue.http.interceptors.push((request, next) => {
+    var timeout;
+	// 這裡改用 _timeout ，就不會觸發原本的
+    if (request._timeout) {
+    	// 一樣綁定一個定時器，但是這裡是只要觸發了，就立即返回 response ， 並且這邊自定義了 status 和 statusText
+        timeout = setTimeout(() => {
+            next(request.respondWith(request.body, {
+                 status: 408,
+                 statusText: 'Request Timeout'
+            }));
+        }, request._timeout);
+    }
+
+    next((response) => {
+        clearTimeout(timeout);
+    });
+})
+```
+具体可参见 [如何用vue-resource设置timeout回调？](https://segmentfault.com/q/1010000005800495)
+
 未完待续...
 
 LastModify: 2016-09-14 19:18
