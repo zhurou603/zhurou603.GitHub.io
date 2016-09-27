@@ -8,7 +8,7 @@ keywords: Stay Hungry, Stay Foolish
 description: 什么是 Stay Hungry, Stay Foolish
 ---
 
-此篇是偶然间看到的，是关于对 `Steve Jobs` 那句经典名句 **[Stay Hungry, Stay Foolish** 的解读，余亦其认为分析独到且合理，品读再三，欢喜不已，特录之于此；原文为繁体，地址如是[Stay Hungry, Stay Foolish.](http://mrjamie.cc/2011/09/16/stay-hungry-stay-foolish/)，作者Jamie。
+此篇是偶然间看到的，是关于对 `Steve Jobs` 那句经典名句 **Stay Hungry, Stay Foolish** 的解读，余亦其认为分析独到且合理，品读再三，欢喜不已，特录之于此；原文为繁体，地址如是:[Stay Hungry, Stay Foolish.](http://mrjamie.cc/2011/09/16/stay-hungry-stay-foolish/)，作者Jamie。
 
 ![Stay Hungry, Stay Foolish](http://nicejade.github.io/assets/images/steve-jobs-feet-toilet.jpg)
 
@@ -30,6 +30,6 @@ description: 什么是 Stay Hungry, Stay Foolish
 
 「You gotta be a fool to believe that will work.」(你一定是个白痴才会相信那东西会成功)是所有的创业者最常听到的，而 Steve Jobs 想告诉你的，就是别理他们，继续当你的傻瓜。因为要革命，你就注定要在众人的误会中孤独的前进。
 
-所以各位创业者，记住 Steve Jobs 的 Stay Hungry, Stay Foolish.
+所以各位创业者，记住 Steve Jobs 的 `Stay Hungry, Stay Foolish` .
 
 **Stay Hungry, Stay Foolish.**
