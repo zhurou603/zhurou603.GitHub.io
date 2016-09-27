@@ -5,7 +5,7 @@ date: 2016-09-27 18:52:53 +0800
 categories: 生活
 tags: 人生
 keywords: Stay Hungry, Stay Foolish
-description: 什么是“Stay Hungry, Stay Foolish”
+description: 什么是 Stay Hungry, Stay Foolish
 ---
 
 此篇是偶然间看到的，是关于对 `Steve Jobs` 那句经典名句 **[Stay Hungry, Stay Foolish** 的解读，余亦其认为分析独到且合理，品读再三，欢喜不已，特录之于此；原文为繁体，地址如是[Stay Hungry, Stay Foolish.](http://mrjamie.cc/2011/09/16/stay-hungry-stay-foolish/)，作者Jamie。
