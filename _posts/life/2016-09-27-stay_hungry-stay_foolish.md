@@ -33,3 +33,18 @@ description: 什么是 Stay Hungry, Stay Foolish
 所以各位创业者，记住 Steve Jobs 的 `Stay Hungry, Stay Foolish` .
 
 **Stay Hungry, Stay Foolish.**
+
+---
+
+据悉，在《乔布斯传》里，他有说过这样一段话：
+
+>迪伦本来可以一直唱抗议歌曲的，这样他也能赚很多钱，但是他没有那么做。他必须向前走，当 1965 年他转做电子音乐时，很多人都疏远了他。1966 年的欧洲巡演是他的巅峰。他会先上台演奏原声吉他，观众非常喜欢。然后他会带出 TheBand 乐队，他们都演奏电子乐器，观众有时候就会喝倒彩。有一次他正要唱《Like a Rolling Stone》，观众中有人高喊“叛徒！”迪伦说：“搞他妈个震耳欲聋！”他们真那样做了。披头士乐队也一样。他们一直演变、前行、改进他们的艺术。那就是我一直试图做的事情——不断前进。否则，就如迪伦所说，如果你不忙着求生，你就在忙着求死 (If you're not busy being born, you're busy dying)。
+
+而在 Steve Jobs 本人名言中也是如此阐释着他对时间，以及自己内心声音的看法：
+
+>Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma - which is living with the results of other people's thinking. Don't let the noise of other's opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary.    
+你的时间有限，所以不要为别人而活。不要被教条所限，不要活在别人的观念里。不要让别人的意见左右自己内心的声音。最重要的是，勇敢的去追随自己的心灵和直觉，只有自己的心灵和直觉才知道你自己的真实想法，其他一切都是次要。
+
+从这里来品读，也可以清醒的明白，将`Stay Foolish` 翻译为 `虚心若愚`是多么敷衍的认识；这里的敷衍在于，国人骨子里犹存的那种中庸惯性，以及中国文人美学的不纯正延伸。更需要知道的是，这个世界本源即被那少数人所引领，那么这种大成功也非寻众人所拥有，否则成功的彼岸岂不早已人满为患？**很多时候，善良的建议反而会让人变得平庸，人生总需要一些一意孤行，勇敢的去追随自己的心灵和直觉**。故而，如果非要将其译为八字箴言，更倾向于 @知乎-Von Don 所给的答案：`功成不息；坚守痴心`。
+
+@Last Modify: 2016-09-28
