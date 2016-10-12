@@ -37,7 +37,7 @@ html, body {
   -webkit-text-size-adjust: none;
   overflow: hidden;
   font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  letter-spacing: .6px; }
+  letter-spacing: 1px; }
 
 a {
   color: inherit;
@@ -88,8 +88,8 @@ a {
 #tags {
   width: 165px;
   height: 100%;
-  background: #009ad6;
-  border-right: 1px solid #0088bd;
+  background: #0099cc;
+  border-right: 1px solid #0086b3;
   box-shadow: inset -15px 0 15px -15px #222;
   float: left;
   position: relative;
@@ -129,15 +129,15 @@ a {
   margin: 0;
   padding: 0;
   font-size: 17px;
-  border-top: 1px solid #0088bd;
-  border-bottom: 1px solid #00acf0;
+  border-top: 1px solid #0086b3;
+  border-bottom: 1px solid #00ace6;
   list-style: none;
   text-align: center; }
 
 .tags__li {
   padding: 12px 35px 9px;
-  border-top: 1px solid #00acf0;
-  border-bottom: 1px solid #0088bd;
+  border-top: 1px solid #00ace6;
+  border-bottom: 1px solid #0086b3;
   cursor: pointer; }
   .tags__li.active {
     margin-right: -1px;
@@ -174,7 +174,7 @@ a {
 #tags__bottom {
   width: 100%;
   height: 44px;
-  border-top: 1px solid #0088bd;
+  border-top: 1px solid #0086b3;
   overflow: hidden;
   position: absolute;
   left: 0;
@@ -184,16 +184,16 @@ a {
     font-size: 18px;
     line-height: 44px;
     text-align: center;
-    border-top: 1px solid #00acf0;
+    border-top: 1px solid #00ace6;
     float: left; }
 
 #icon-email {
-  border-right: 1px solid #0088bd; }
+  border-right: 1px solid #0086b3; }
   #icon-email:before {
     content: "\e800"; }
 
 #icon-feed {
-  border-left: 1px solid #00acf0; }
+  border-left: 1px solid #00ace6; }
   #icon-feed:before {
     content: "\e802"; }
 
@@ -206,7 +206,7 @@ a {
   transition: color .3s, background .3s; }
   .tags-btn:hover {
     color: #F7F7F7;
-    background: #008fc7; }
+    background: #008ebd; }
 
 /*---------------------------------*\
    Posts List
@@ -724,7 +724,8 @@ iframe {
 table {
   border: 1px solid #7D8B99;
   border-collapse: collapse;
-  word-break: break-word; }
+  word-break: break-word;
+  color: #cccccc; }
 
 table tr {
   border-bottom: 1px solid #7D8B99; }
@@ -736,7 +737,8 @@ table td, tr > th {
   padding: 10px 0; }
 
 table > thead {
-  background-color: #F8645A; }
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff; }
 
 table tr:nth-child(even) {
   background-color: rgba(0, 0, 0, 0.5) !important; }
@@ -746,22 +748,22 @@ h1 {
 
 h2, h3, h4, h5, h6 {
   font-weight: 900;
-  color: #fe0;
+  color: #0099CC;
   margin: 36px 0 12px 0; }
 
 h2::before {
-  content: '##';
-  color: #2EB695;
+  content: '#';
+  color: #0099CC;
   font-weight: bolder; }
 
 h3::before {
-  content: '###';
-  color: #2EB695;
+  content: '##';
+  color: #0099CC;
   font-weight: bolder; }
 
 h4::before {
-  content: '####';
-  color: #2EB695;
+  content: '###';
+  color: #0099CC;
   font-weight: bolder; }
 
 .hljs {

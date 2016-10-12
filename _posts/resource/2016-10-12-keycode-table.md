@@ -6,10 +6,14 @@ tags: Keycode
 keywords: Keycode
 description: Keycode对照表（键码对照表）
 ---
-<style>
+
+<style type="text/css">
 td{
-    min-width: 88px;
+    min-width: 100px;
     text-align: center;
+}
+table td:nth-child(odd){
+    color: #0099CC !important
 }
 </style>
 
