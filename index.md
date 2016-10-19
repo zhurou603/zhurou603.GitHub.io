@@ -11,7 +11,7 @@ title: 天意人间舫
     -webkit-box-align: center;-moz-box-align: center;
     -webkit-align-items: center; align-items: center; -webkit-box-pack: center;
     -webkit-justify-content: center; justify-content: center;
-    font-size: 1.6em;
+    font-size: 1.2em;
     color: #F2F2F2;
 }
 </style>

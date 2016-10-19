@@ -91,6 +91,65 @@ Vue.http.interceptors.push((request, next) => {
 
 具体可参见 [如何用vue-resource设置timeout回调？](https://segmentfault.com/q/1010000005800495)。
 
+
+### 使用 Plugin 问题
+
+使用 `vue` 各路好手提供的插件之时，在享受其便捷性同时，也许会被些许意想不到的问题困扰；毕竟那么丰富的功能中，多少引入了很多你还未想到的玩意儿；譬如：使用 [vue-tables](https://github.com/matfish2/vue-tables) 这个插件有一段时间了，但今日还是被如下一个报错给耽搁了不少时间(需要补充的是，经验有时候会帮倒忙)
+
+```
+Module parse failed: D:\xxx\yyyy\node_modules\vue-tables\lib\table-template.html Unexpected token (1:0)
+You may need an appropriate loader to handle this file type.
+SyntaxError: Unexpected token (1:0)
+```
+
+连续的工作，已经使得思维能力下降；其实造成这个问题，在于 `vue-tables` 插件中使用了 html 做的模板，因此在书写 webpack 只是就需要，引入对 html 文件的解析器；只需要如此操作即可,在 module 中添加
+`vue-html` 来 *.html* 为后缀的文件即可:
+
+```
+module: {
+    preLoaders: [{
+        test: /\.vue$/,
+        loader: 'eslint',
+        include: projectRoot,
+        exclude: /node_modules/
+    }, {
+        test: /\.js$/,
+        loader: 'eslint',
+        include: projectRoot,
+        exclude: /node_modules/
+    }],
+    loaders: [{
+        test: /\.vue$/,
+        loader: 'vue'
+    }, {
+        test: /\.js$/,
+        loader: 'babel',
+        include: projectRoot,
+        exclude: /node_modules/
+    }, {
+        test: /\.json$/,
+        loader: 'json'
+    }, {
+        test: /\.html$/,
+        loader: 'vue-html'
+    }, {
+        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        loader: 'url',
+        query: {
+            limit: 13140,
+            name: utils.assetsPath('img/[name].[hash:7].[ext]')
+        }
+    }, {
+        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        loader: 'url',
+        query: {
+            limit: 10000,
+            name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
+        }
+    }]
+}
+```
+
 未完待续...
 
 LastModify: 2016-09-26 19:18
