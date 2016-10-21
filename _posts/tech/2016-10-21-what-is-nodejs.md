@@ -10,6 +10,20 @@ description: What is Node.js(什么是Node.js)What Node.js Can do(Node.js可以�
 
 **Node.js**，或者 **Node**，是一个可以让 JavaScript 运行在服务器端的平台。它可以让JavaScript 脱离浏览器的束缚运行在一般的服务器环境下，就像运行 Python、Perl、PHP、Ruby程序一样。你可以用 Node.js 轻松地进行服务器端应用开发，Python、Perl、PHP、Ruby 能做的事情 Node.js 几乎都能做，而且可以做得更好。
 
+<style>
+.nodejs{
+    color: #79B45F;
+    font-size: 96px;
+    background-color: #525659;
+    width: 100%;
+    min-height: 100px;
+    line-height: 300px;
+    text-align: center;
+}
+</style>   
+
+<div class="nodejs">Node.js</div>
+
 Node.js 是一个为实时Web（Real-time Web）应用开发而诞生的平台，它从诞生之初就充分考虑了在实时响应、超大规模数据要求下架构的可扩展性。这使得它摒弃了传统平台依靠多线程来实现高并发的设计思路，而采用单线程、异步式I/O、事件驱动式的程序设计模型。这些特性不仅带来了巨大的性能提升，还减少了多线程程序设计的复杂性，进而提高了开发效率。Node.js 最初是由 `Ryan Dahl` 发起的开源项目，后来被 `Joyent` 公司注意到。Joyent 公司将 `Ryan Dahl` 招入旗下，因此现在的 Node.js 由 Joyent 公司管理并维护。尽管它诞生的时间（2009年）还不长，但它的周围已经形成了一个庞大的生态系统。Node.js 有着强大而灵活的包管
 理器（node package manager，npm），目前已经有上万个第三方模块，其中有网站开发框架，有 MySQL、PostgreSQL、MongoDB 数据库接口，有模板语言解析、CSS 生成工具、邮件、加密、图形、调试支持，甚至还有图形用户界面和操作系统 API工具。由 VMware 公司建立的云计算平台 Cloud Foundry 率先支持了 Node.js。2011年6月，微软宣布与 Joyent 公司合作，将 Node.js 移植到 Windows，同时 Windows Azure 云计算平台也支持 Node.js。Node.js 目前还处在迅速发展阶段，相信在不久的未来它一定会成为流行的Web应用开发平台。让我们从现在开始，一同探索 **Node.js** 的美妙世界吧！
 
@@ -71,3 +85,18 @@ CommonJS 规范，以便相互兼容和代码复用。Node.js 的部份实现遵
 的性能足以满足要求。**Node.js** 还可以部署到非网络应用的环境下，比如一个命令行工具。Node.js 还可以调用
 C/C++ 的代码，这样可以充分利用已有的诸多函数库，也可以将对性能要求非常高的部分用
 C/C++ 来实现。
+
+## 1.3 Node.js 核心模块
+
+如果只是在服务器运行JavaScript代码，用处并不大，因为服务器脚本语言已经有很多种了。Node.js的用处在于，它本身还提供了一系列功能模块，与操作系统互动。这些核心的功能模块，不用安装就可以使用，下面是它们的清单。
+
+>**http**：提供HTTP服务器功能。        
+**url**：解析URL。        
+**fs**：与文件系统交互。        
+**querystring**：解析URL的查询字符串。        
+**child_process**：新建子进程。        
+**util**：提供一系列实用小工具。        
+**path**：处理文件路径。        
+**crypto**：提供加密和解密功能，基本上是对OpenSSL的包装。        
+
+上面这些核心模块，源码都在Node的lib子目录中。为了提高运行速度，它们安装时都会被编译成二进制文件。核心模块总是最优先加载的。如果你自己写了一个HTTP模块，require('http')加载的还是核心模块。
