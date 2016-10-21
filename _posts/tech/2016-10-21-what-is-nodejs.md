@@ -16,7 +16,7 @@ description: What is Node.js(什么是Node.js)What Node.js Can do(Node.js可以�
     font-size: 96px;
     background-color: #525659;
     width: 100%;
-    min-height: 100px;
+    min-height: 200px;
     line-height: 300px;
     text-align: center;
 }
