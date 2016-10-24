@@ -23,7 +23,7 @@ console.log(o1);  // { a: 1, b: 2, c: 3 }, 注意目标对象自身也会改变�
 
 var obj2 = Object.assign(o1, o2, o4);
 console.log(obj2); // { a: 3, b: 2 }
-console.log(o1);  // { a: 3, b: 2 } 
+console.log(o1);  // { a: 3, b: 2 }
 //注意，如果目标对象与源对象有同名属性，或多个源对象有同名属性，则后面的属性会覆盖前面的属性。
 ```
 可参见[Object-assign@MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) 或 [Object-assign@ruanyifeng](http://es6.ruanyifeng.com/#docs/object#Object-assign)。
@@ -54,6 +54,32 @@ if (!Object.assign) {
     }
   });
 }
+```
+
+### Javascript中的去掉字符串(String)中空行
+
+```
+String.prototype.removeBlankLines = function () {
+	return this.replace(/(\n[\s\t]*\r*\n)/g, '\n').replace(/^[\n\r\n\t]*|[\n\r\n\t]*$/g, '')
+}
+
+<!-- 测试用例(es6语法) -->
+var testStr = `1 2 3 4 4 5
+
+ 			   9 8 8 7 6 5
+
+ 			   666
+
+
+`
+console.log(testStr.removeBlankLines())
+
+
+测试结果，输出如下：
+1 2 3 4 4 5
+ 			   9 8 8 7 6 5
+ 			   666
+
 ```
 
 ### 隐藏/改变滚动条的边线
