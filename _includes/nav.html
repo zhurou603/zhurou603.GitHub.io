@@ -34,15 +34,15 @@
   -webkit-animation-direction: alternate;         /*动画执行方向，alternate 表示反复*/
 }
 @-webkit-keyframes breathe {
-    0% { opacity: .5; text-shadow:0 1px 2px rgba(234,222,11,0.1);}
+    0% { opacity: .5; text-shadow:0 1px 2px rgba(234,222,11,0.5);}
     100% { opacity: 1; text-shadow:0 1px 30px rgba(59,255,255,1);}
 }
 @-ms-keyframes breathe {
-    0% { opacity: .5; text-shadow:0 1px 2px rgba(234,222,11,0.1);}
+    0% { opacity: .5; text-shadow:0 1px 2px rgba(234,222,11,0.5);}
     100% { opacity: 1; text-shadow:0 1px 30px rgba(59,255,255,1);}
 }
 @-moz-keyframes breathe {
-    0% { opacity: .5; text-shadow:0 1px 2px rgba(234,222,11,0.1);}
+    0% { opacity: .5; text-shadow:0 1px 2px rgba(234,222,11,0.5);}
     100% { opacity: 1; text-shadow:0 1px 30px rgba(59,255,255,1);}
 }
 #counter_show{
@@ -55,6 +55,10 @@
   display: inline-block;
   text-align: center;
   margin: auto;
+}
+.follow_text{
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 </style>
 
@@ -70,7 +74,7 @@
     </ul>
 
     <div id="weibo_show">
-        <span class="tags-btn content-center"><wb:follow-button uid="2991975565" type="red_1" width="67" height="24" ></wb:follow-button></span>
+        <span class="tags-btn content-center"><wb:follow-button uid="3235949794" type="gray_1" width="69" height="24" ></wb:follow-button></span>
     </div>
 
     <div id="jeff_show">
