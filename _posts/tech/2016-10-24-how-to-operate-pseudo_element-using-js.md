@@ -14,47 +14,6 @@ description: 何为伪元素，JavaScript如何操纵伪元素，如何改变伪
 
 这直译过来就是：css引入伪类和伪元素概念是为了格式化文档树以外的信息。也就是说，伪类和伪元素是用来修饰不在文档树中的部分，比如，一句话中的第一个字母，或者是列表中的第一个元素。
 
-<style>
-.picture-bg{
-    width: 100%;
-    min-height: 500px;
-    line-height: 66px;
-    text-align: center;
-    padding-top: 100px;
-    background-color: #cccccc;
-    background: url('http://nicejade.github.io/assets/images/noise.png'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e0e0e0), color-stop(50%, #cccccc), color-stop(100%, #b0b0b0));
-    background: url('http://nicejade.github.io/assets/images/noise.png'), -webkit-linear-gradient(#e0e0e0, #cccccc, #b0b0b0);
-    background: url('http://nicejade.github.io/assets/images/noise.png'), -moz-linear-gradient(#e0e0e0, #cccccc, #b0b0b0);
-    background: url('http://nicejade.github.io/assets/images/noise.png'), -o-linear-gradient(#e0e0e0, #cccccc, #b0b0b0);
-    background: url('http://nicejade.github.io/assets/images/noise.png'), linear-gradient(#e0e0e0, #cccccc, #b0b0b0);
-    border-top: 1px solid #f2f2f2;
-    border-bottom: 1px solid #8c8c8c;
-    font-size: 64px;
-    font-weight: 100;
-}
-@media (max-width: 768px) {
-    .picture-bg{
-        font-size: 22px;
-        min-height: 200px;
-        padding-top: 20px;
-    }
-}
-.change-color{
-    color: #f35626;
-    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: hue 10s infinite linear;
-}
-@-webkit-keyframes hue {
-  from {
-    -webkit-filter: hue-rotate(0deg);
-  }
-  to {
-    -webkit-filter: hue-rotate(-360deg);
-  }
-}
-</style>
 
 <div class="picture-bg">
 <p class='change-color'>Operate Pseudo-element</p>
