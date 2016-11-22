@@ -14,7 +14,7 @@ description: 何为伪元素，JavaScript如何操纵伪元素，如何改变伪
 
 这直译过来就是：css引入伪类和伪元素概念是为了格式化文档树以外的信息。也就是说，伪类和伪元素是用来修饰不在文档树中的部分，比如，一句话中的第一个字母，或者是列表中的第一个元素。
 
-<div class="picture-bg">
+<div class="picture-bg animated bounceInLeft">
 <p class='change-color'>Operate Pseudo-element</p>
 <p class='change-color'>Using JavaScript</p>
 </div>
