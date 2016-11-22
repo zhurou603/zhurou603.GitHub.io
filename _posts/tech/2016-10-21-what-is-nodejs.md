@@ -14,15 +14,13 @@ description: What is Node.js(什么是Node.js)What Node.js Can do(Node.js可以�
 .nodejs{
     color: #79B45F;
     font-size: 96px;
-    background-color: #525659;
     width: 100%;
     min-height: 200px;
     line-height: 300px;
-    text-align: center;
 }
 </style>   
 
-<div class="nodejs">Node.js</div>
+<div class="nodejs picture-bg">Node.js</div>
 
 Node.js 是一个为实时Web（Real-time Web）应用开发而诞生的平台，它从诞生之初就充分考虑了在实时响应、超大规模数据要求下架构的可扩展性。这使得它摒弃了传统平台依靠多线程来实现高并发的设计思路，而采用单线程、异步式I/O、事件驱动式的程序设计模型。这些特性不仅带来了巨大的性能提升，还减少了多线程程序设计的复杂性，进而提高了开发效率。Node.js 最初是由 `Ryan Dahl` 发起的开源项目，后来被 `Joyent` 公司注意到。Joyent 公司将 `Ryan Dahl` 招入旗下，因此现在的 Node.js 由 Joyent 公司管理并维护。尽管它诞生的时间（2009年）还不长，但它的周围已经形成了一个庞大的生态系统。Node.js 有着强大而灵活的包管
 理器（node package manager，npm），目前已经有上万个第三方模块，其中有网站开发框架，有 MySQL、PostgreSQL、MongoDB 数据库接口，有模板语言解析、CSS 生成工具、邮件、加密、图形、调试支持，甚至还有图形用户界面和操作系统 API工具。由 VMware 公司建立的云计算平台 Cloud Foundry 率先支持了 Node.js。2011年6月，微软宣布与 Joyent 公司合作，将 Node.js 移植到 Windows，同时 Windows Azure 云计算平台也支持 Node.js。Node.js 目前还处在迅速发展阶段，相信在不久的未来它一定会成为流行的Web应用开发平台。让我们从现在开始，一同探索 **Node.js** 的美妙世界吧！

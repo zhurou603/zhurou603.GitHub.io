@@ -22,3 +22,5 @@
 - 三栏布局（master分支，基于[3-Jekyll](https://github.com/P233/3-Jekyll)）
 - 三栏布局 (bootstrap-based分支，基于Bootstrap)
 - 单栏布局（first-ui分支，基于Bootstrap）
+
+>**微注：** 对 `.scss` 文件的转化，只需执行： `sass --watch _sass\style.scss:css\style.css --trace`,当然，这需要注意下相对路径；具体可参见[SASS用法指南](http://www.ruanyifeng.com/blog/2012/06/sass.html),如是生产环境，执行 `　sass --style compressed .\_sass\style.scss .\css\style.css` 命令即可。

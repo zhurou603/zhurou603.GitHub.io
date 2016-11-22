@@ -26,7 +26,7 @@ $tags-active-fg:  #65c294;  //RuoZhu-Color
 $tags-bg:         #0099cc;
 
 $pl-bg:           #111111; // pl: posts-list
-$strong-blue:     #3bffff; //Strong-蓝色
+$strong-blue:     #66CC99; //Strong-青色
 
 $pl-input-fg:     $green;
 $pl-input-ph:     #111111; // input placeholder foreground colour
@@ -614,7 +614,6 @@ a {
 strong {
     font-weight: 700;
     color: $strong-blue;
-    text-shadow: 0 0px 1px #111;
 }
 blockquote {
   color: $black;
@@ -975,22 +974,22 @@ h1{
 }
 h2, h3, h4, h5, h6 {
   font-weight: 900;
-  color: #0099CC;
+  color: #009966;
   margin: 36px 0 12px 0;
 }
 h2::before{
     content: '#';
-    color: #0099CC;
+    color: #009966;
     font-weight: bolder;
 }
 h3::before{
     content: '##';
-    color: #0099CC;
+    color: #009966;
     font-weight: bolder;
 }
 h4::before{
     content: '###';
-    color: #0099CC;
+    color: #009966;
     font-weight: bolder;
 }
 
@@ -1025,6 +1024,7 @@ h4::before{
     padding-left: ($mobile-page-margin-width) !important;
   }
 }
+
 /*---------------------------------*\
    Vendors
 \*---------------------------------*/
@@ -1032,3 +1032,4 @@ h4::before{
 @import "animation";
 @import "nprogress";
 @import "pygments";
+@import "picture_bg";
