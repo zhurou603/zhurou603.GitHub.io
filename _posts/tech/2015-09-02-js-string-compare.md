@@ -1,12 +1,17 @@
 ---
 layout: post
-title: javascript字符串比较
+title: JavaScript 字符串比较
 category: 技术
-tags: javascript
+tags: javascript,JavaScript
 keywords: javascript,字符串
 ---
 
 ## 字符串和其他对象比较大小 ##
+
+<div class="picture-bg animated bounceInLeft">
+<p class='change-color' style='font-size:64px'>JavaScript String Comparison</p>
+<p class='change-color' style='font-size:18px'>This is A question worthy of discussion and attention.</p>
+</div>
 
 [JavaScript中的字符串操作](http://www.cnblogs.com/xuebin/articles/1296837.html)
 字符串和其他对象进行比较，大体要遵循下面的一些考量：
@@ -18,29 +23,29 @@ keywords: javascript,字符串
 
 除此之外还有些特殊的地方需要注意：
 
-    
+
 	<script type="text/javascript">
 	    function test(){
 	        //1)纯数字之间比较
 	        //alert(1<3);//true
-	          
+
 	        //2)数字字符串比较，会将其先转成数字
 	        //alert("1"<"3");//true
 	        //alert("123"<"123");//false
-	          
+
 	        //3)纯字符串比较,先转成ascii码
 	        //alert("a"<"b");//true
 	        //alert("abc"<"aad");//false,多纯字母比较，会依次比较ascii码
-	          
+
 	        //4)汉字比较
 	        //alert("我".charCodeAt());//25105
 	        //alert("的".charCodeAt());//30340
 	        //alert("我"<"的");//true,汉字比较,转成ascii码
-	          
+
 	        //5)当数字和字符串比较，且字符串为数字。则将数字字符串转为数字
 	        //alert(123<"124");//true,下面一句代码得出124的ascii码为49，所以并不是转成ascii比较
 	        //alert("124".charCodeAt());//49
-	          
+
 	        //6)当数字和字符串比较,且字符串为非纯数字时,则将非数字字符串转成数字的时候会转换为NaN,当NaN和数字比较时不论大小都返回false.
 	        alert(13>"abc");//false
 	    }
@@ -63,7 +68,7 @@ keywords: javascript,字符串
 	var num = 'a'=='A';  //false,转换后的编码不一样
 	var num = 2==NaN; //false,只要有NaN，都是false
 	var num = {}=={}; //false,比较的是他们的地址，每个新创建对象的引用地址都不同
-	
+
 	var age = {};
 	var height = age;
 	var box = age == height;//true,引用地址一样，所以相等
@@ -89,10 +94,10 @@ if(parseInt(document.form1.txtAge.value) == someNumericVar) { ... }
 
     var strings;  // 要排序的字符串数组，假设已经得到初始化
     strings.sort(function(a,b) { return a.localeCompare(b) });  // 调用sort()方法进行排序
-    
+
 
 参考文章：
 
-[详解js运算符](http://segmentfault.com/a/1190000002423935 "详解js运算符") 
+[详解js运算符](http://segmentfault.com/a/1190000002423935 "详解js运算符")
 
 [js如何比较数字字符串之间大小](http://www.esnsc.com/news655.html)
