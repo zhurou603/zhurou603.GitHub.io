@@ -10,12 +10,11 @@
 
 ### 安装说明
 
-1. fork库到自己的github
-2. 修改名字为：`username.github.io`
-3. clone库到本地，参考`_posts`中的目录结构自己创建适合自己的文章目录结构
-4. 修改CNAME，或者删掉这个文件，使用默认域名
-5. 修改`_config.yml`配置项
-6. It's done!
+1. fork 库到自己的 github.
+2. 进入 Setting, 修改名字为：`username.github.io`,并启用 github Page 服务
+3. clone 库到本地，参考 `_posts` 中的目录结构自己创建适合自己的文章目录结构
+4. 修改 CNAME （如果无个人域名，可删掉这个文件，使用默认域名）
+5. 修改 `_config.yml` 配置项，It's done!
 
 ### 分支说明
 
@@ -24,3 +23,5 @@
 - 单栏布局（first-ui分支，基于Bootstrap）
 
 >**微注：** 对 `.scss` 文件的转化，只需执行： `sass --watch _sass\style.scss:css\style.css --trace`,当然，这需要注意下相对路径；具体可参见[SASS用法指南](http://www.ruanyifeng.com/blog/2012/06/sass.html),如是生产环境，执行 `　sass --style compressed .\_sass\style.scss .\css\style.css` 命令即可。
+
+[![天意人间舫](https://i.loli.net/2017/08/03/5983094a78592.jpg)](https://imgly.net/i/CfH)
