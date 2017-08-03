@@ -1,4 +1,4 @@
-if (location.host !== "nicejade.github.io") {
+if (location.host === "nicejade.github.io") {
     // 总数
     var jeffjade_firebase = new Firebase("https://nicejade.firebaseIO.com");
     jeffjade_firebase.child("sum").on("value", function(data) {
