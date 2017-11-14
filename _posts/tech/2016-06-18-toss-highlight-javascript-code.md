@@ -14,11 +14,11 @@ description: 记录下给 http://nicejade.github.io/jade/vue-jade-components-dem
 
 ```
 <head>
-<link rel="stylesheet" href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css">
+<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css">
 </head>
 
 <body>
-<script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 </body>
 ```
@@ -37,11 +37,11 @@ window.onhashchange = function(){
 
 ```
 <head>
-<link href="http://cdn.bootcss.com/SyntaxHighlighter/3.0.83/styles/shCoreFadeToGrey.min.css" rel="stylesheet">
+<link href="https://cdn.bootcss.com/SyntaxHighlighter/3.0.83/styles/shCoreFadeToGrey.min.css" rel="stylesheet">
 </head>
 
-<script src="http://cdn.bootcss.com/SyntaxHighlighter/3.0.83/scripts/shCore.min.js"></script>
-<script src="http://cdn.bootcss.com/SyntaxHighlighter/3.0.83/scripts/shBrushJScript.min.js"></script>
+<script src="https://cdn.bootcss.com/SyntaxHighlighter/3.0.83/scripts/shCore.min.js"></script>
+<script src="https://cdn.bootcss.com/SyntaxHighlighter/3.0.83/scripts/shBrushJScript.min.js"></script>
 
 <script>
 SyntaxHighlighter.all();

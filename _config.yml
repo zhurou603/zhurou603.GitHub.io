@@ -10,19 +10,19 @@ kramdown:
 author:
   name: 晚晴幽草
   email: jeffjade@163.com
-  link: http://www.jeffjade.com
-  weibo: http://weibo.com/3235949794
-  github: http://github.com/nicejade
+  link: https://www.jeffjade.com
+  weibo: https://weibo.com/3235949794
+  github: https://github.com/nicejade
 
 # 站点信息
 title: 天意人间舫
 description: 个人博客(Jekyll);整理、记载关于工具/资源/生活/技术/读书/影音等经验和思考;
-url: http://nicejade.github.io
+url: https://nicejade.github.io
 rss_url: /pages/atom.xml
 
 # avatar头像及Favicon
 avatar: http://7xoosr.com1.z0.glb.clouddn.com/nicejadeIcon.jpg
-favicon: http://www.jeffjade.com/img/xuan.ico
+favicon: https://www.jeffjade.com/img/xuan.ico
 
 # google analytics 设置
 ga:
