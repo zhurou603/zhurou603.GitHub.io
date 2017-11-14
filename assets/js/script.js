@@ -179,7 +179,7 @@ function afterPjax() {
     if ( !ds_loaded && container.scrollTop() + container.height() > top ) {
       $.ajax({
         type: 'GET',
-        url: 'http://' + disqus_shortname + '.disqus.com/embed.js',
+        url: '//' + disqus_shortname + '.disqus.com/embed.js',
         dataType: 'script',
         cache: true
       });
