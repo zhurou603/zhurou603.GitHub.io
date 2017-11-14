@@ -21,8 +21,8 @@ url: https://nicejade.github.io
 rss_url: /pages/atom.xml
 
 # avatar头像及Favicon
-avatar: http://7xoosr.com1.z0.glb.clouddn.com/nicejadeIcon.jpg
-favicon: https://www.jeffjade.com/img/xuan.ico
+# avatar: //7xoosr.com1.z0.glb.clouddn.com/nicejadeIcon.jpg
+# favicon: https://www.jeffjade.com/img/xuan.ico
 
 # google analytics 设置
 ga:
