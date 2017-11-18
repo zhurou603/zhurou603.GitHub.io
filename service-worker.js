@@ -29,7 +29,7 @@ let port;
 */
 
 function developmentMode() {
-  return __DEVELOPMENT__ || __DEBUG__;
+  return location.hostname === '127.0.0.1' || location.hostname === 'localhost' || __DEVELOPMENT__ || __DEBUG__;
 }
 
 function cacheKey() {
