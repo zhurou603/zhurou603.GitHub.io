@@ -20,6 +20,11 @@
 - 三栏布局 (bootstrap-based分支，基于Bootstrap)
 - 单栏布局（first-ui分支，基于Bootstrap）
 
+### 优化日志
+
+#### 改善访问体验，介入 `Pwa`
+Update@11 月 14；为跟上下一代 Web 应用的进程，有为网站介入 `PWA` 相关技术；添加 Web App Manifest，支持添加此博客到设备屏幕；注入了 Service Worker，提升了访问速度，优化了渲染性能，支持部分浏览器离线访问等。`PWA` 相关技术，可参见 [nice-front-end-tutorial: pwa](https://github.com/nicejade/nice-front-end-tutorial/blob/master/tutorial/pwa-tutorial.md)。
+
 >**微注：** 对 `.scss` 文件的转化，只需执行： `sass --watch _sass\style.scss:css\style.css --trace`,当然，这需要注意下相对路径；具体可参见[SASS用法指南](http://www.ruanyifeng.com/blog/2012/06/sass.html),如是生产环境，执行 `　sass --style compressed .\_sass\style.scss .\css\style.css` 命令即可。
 
 [![天意人间舫](https://i.loli.net/2017/08/03/5983094a78592.jpg)](https://imgly.net/i/CfH)
