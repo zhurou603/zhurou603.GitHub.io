@@ -11,7 +11,7 @@ description: 《早晨从中午开始》是一篇路遥去世前躺在医院病�
 
 那些年大学时候，自路遥先生《平凡的世界》开始，一发不可收拾，渐而大快朵颐的触及到其他作品，如《人生》、《惊心动魄的一夜》、《在困难的日子里》、《黄叶在秋风中飘落》、《风雪腊梅》等。这杂文集《早晨从中午开始》也是那时读的，至今钦赞不已。于现在大多青年人来讲，读书都已成一种奢侈时间消费；更何况是这优秀却未曾迎合的杂文嘞？这里搜录之，以飨诸君。
 
-鉴于先生此文篇幅巨大(五万余字)，故分之为[早晨从中午开始(上)](http://nicejade.github.io/2016/02/26/the-morning-started-at-noon.html)，[早晨从中午开始(中)](http://nicejade.github.io/2016/02/26/the-morning-started-at-noon-2.html)，[早晨从中午开始(下)](http://nicejade.github.io/2016/02/26/the-morning-started-at-noon-3.html)三篇而收录。
+鉴于先生此文篇幅巨大(五万余字)，故分之为[早晨从中午开始(上)](//blog.lovejade.cn/2016/02/26/the-morning-started-at-noon.html)，[早晨从中午开始(中)](//blog.lovejade.cn/2016/02/26/the-morning-started-at-noon-2.html)，[早晨从中午开始(下)](//blog.lovejade.cn/2016/02/26/the-morning-started-at-noon-3.html)三篇而收录。
 
 ### 第一节：献给我的弟弟王天乐
 
@@ -473,4 +473,4 @@ description: 《早晨从中午开始》是一篇路遥去世前躺在医院病�
 
 那就是认定你在做一件对你来说是前所未有的工作。甚至是做一件前无古人的工作。不论实质上是否如此，你就得这样来认为。你要感觉到人在创造，你在不同凡响地创造，你的创造是独一无二的；你应该为你的工作自豪，就是认为它伟大无比也未尝不可。
 
-下一篇：[早晨从中午开始(中)](http://nicejade.github.io/2016/02/26/the-morning-started-at-noon-2.html)
+下一篇：[早晨从中午开始(中)](//blog.lovejade.cn/2016/02/26/the-morning-started-at-noon-2.html)

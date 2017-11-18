@@ -17,7 +17,7 @@ description: 优美｜感情话/情书收集
 
 > 这句，来源于路遥先生的《平凡的世界》；出自女主之一**田润叶**给少安的一封书信；此一句堪称荡气回肠：女追男隔座山，润叶之勇敢，冠绝所闻；得妻若此，夫复何求？读者的你是否可有这共同的憧憬呢？。
 
-![16-03-12-清晨-深圳](http://7xoosr.com1.z0.glb.clouddn.com/loveFlower.jpg)
+![16-03-12-清晨-深圳](//image.nicelinks.site/loveFlower.jpg)
 
 ---
 

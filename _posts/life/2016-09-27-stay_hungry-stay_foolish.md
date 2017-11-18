@@ -10,7 +10,7 @@ description: 什么是 Stay Hungry, Stay Foolish
 
 此篇是偶然间看到的，是关于对 `Steve Jobs` 那句经典名句 **Stay Hungry, Stay Foolish** 的解读，余亦其认为分析独到且合理，品读再三，欢喜不已，特录之于此；原文为繁体，地址如是:[Stay Hungry, Stay Foolish.](http://mrjamie.cc/2011/09/16/stay-hungry-stay-foolish/)，作者Jamie。
 
-![Stay Hungry, Stay Foolish](http://nicejade.github.io/assets/images/steve-jobs-feet-toilet.jpg)
+![Stay Hungry, Stay Foolish](//blog.lovejade.cn/assets/images/steve-jobs-feet-toilet.jpg)
 
 2005 年，Steve Jobs 在 Stanford 毕业典礼上演讲，最后送给了在场的年轻人一句「Stay Hungry, Stay Foolish.」这个演讲后来被广为流传，各种中译版也纷纷出现，有些人把这句话翻译为「求知若饥，虚心若愚」，《Cheers 杂志》则把这句话翻译为 [「饥渴求知，虚怀若愚」](http://mmdays.com/2007/04/02/steve-jobs/)。无论如何，我认为这些都是错误的解读。
 

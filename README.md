@@ -16,7 +16,7 @@
 4. 修改 CNAME （如果无个人域名，可删掉这个文件，使用默认域名）；
 5. 修改 `_config.yml` 配置项，然后就大功告成了！当然，你可以修改更多。
 
->**微注：** 对 `.scss` 文件的转化，只需执行： `sass --watch _sass\style.scss:css\style.css --trace`,当然，这需要注意下相对路径；具体可参见[SASS用法指南](http://www.ruanyifeng.com/blog/2012/06/sass.html),如是生产环境，执行 `sass --style compressed .\_sass\style.scss .\css\style.css` 命令即可。
+>**微注：** 对 `.scss` 文件的转化，只需执行： `sass --watch assets/_sass/style.scss:css/style.css --trace`,当然，这需要注意下相对路径；具体可参见 [SASS 用法指南](http://www.ruanyifeng.com/blog/2012/06/sass.html),如是生产环境，执行 `sass --style compressed ./assets/_sass/style.scss ./assets/css/style.css` 命令即可。
 
 ### 分支说明
 
@@ -29,4 +29,3 @@
 #### 改善访问体验，注入 `Pwa`
 
 (Update@11 月 14)为跟上下一代 Web 应用的进程，有为网站注入 `PWA` 相关技术；添加 Web App Manifest，支持添加此博客到设备屏幕；注入了 Service Worker，提升了访问速度，优化了渲染性能，支持部分浏览器离线访问等。`PWA` 相关技术，可参见 [nice-front-end-tutorial: pwa](https://github.com/nicejade/nice-front-end-tutorial/blob/master/tutorial/pwa-tutorial.md)。
-

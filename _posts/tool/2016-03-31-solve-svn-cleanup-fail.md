@@ -10,7 +10,7 @@ description: svn 清理失败 (clean up 失败) 的解决方法
 
 在被迫使用 **SVN** 的日子里，不时会遇到，某个文件被 **Lock** 的情形。任你是 Revert，Resolvd，还是别的，就是不行，无法 **Cleanup**。那叫一个凄凄惨惨，花费不少时间折腾这个，除了重新 **Checkout** 外，就如下办法是能够很好工作的，特此怒记载一笔。 **Git ！Git ！Git ！**
 
-![解决 svn 清理失败(Cleanup Fail)问题](http://7xoosr.com1.z0.glb.clouddn.com/sharp-weapon.jpg)
+![解决 svn 清理失败(Cleanup Fail)问题](//image.nicelinks.site/sharp-weapon.jpg)
 
 ### **svn无法Cleanup解决方法：**  
 

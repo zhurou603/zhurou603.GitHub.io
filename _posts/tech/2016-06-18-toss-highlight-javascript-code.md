@@ -5,10 +5,10 @@ date: 2016-06-18 17:33:33 +0800
 categories: 技术
 tags: JavaScript
 keywords: highlight,JavaScript
-description: 记录下给 http://nicejade.github.io/jade/vue-jade-components-demo.html#/ 折腾给JavaScript高亮历程；
+description: 记录下给 //blog.lovejade.cn/jade/vue-jade-components-demo.html#/ 折腾给JavaScript高亮历程；
 ---
 
-在尝试开源 `Vue Common Components` 时候，同时也为其做相关 **Demo** 以及 **Instructions** ————[Vue Common Components Desc and  Example](http://nicejade.github.io/jade/vue-jade-components-demo.html#/) 这个本身采用 **vue** 以及 **vue-router** 实现之。这其中必然涉及到代码示例，因此有特写了一个组件以承载 **Demo** 中js代码。仅仅能承载，必然是需要将其高亮处理的；鉴于时间问题，自然就会选择使用固有的轮子；这里就记录下使用轮子中得一些心得。
+在尝试开源 `Vue Common Components` 时候，同时也为其做相关 **Demo** 以及 **Instructions** ————[Vue Common Components Desc and  Example](//blog.lovejade.cn/jade/vue-jade-components-demo.html#/) 这个本身采用 **vue** 以及 **vue-router** 实现之。这其中必然涉及到代码示例，因此有特写了一个组件以承载 **Demo** 中js代码。仅仅能承载，必然是需要将其高亮处理的；鉴于时间问题，自然就会选择使用固有的轮子；这里就记录下使用轮子中得一些心得。
 
 网络上充盈着各种 “高性能JavaScript代码高亮插件”；搜索过程中有首先选取了[Highlight](https://highlightjs.org/) (PS: 用的是[Bootstrap中文网开源项目免费 CDN 服务](http://www.bootcdn.cn/))，故此使用之Like This：
 

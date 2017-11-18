@@ -364,7 +364,7 @@ a {
 #search-form {
   width: 100%;
   height: $search-height;
-  // border-bottom: 1px solid $border;
+  border-radius: 0px;
   @media screen and (max-width: $sidebar-width) {
     height: 51px;
     display: -webkit-flex;
@@ -388,7 +388,7 @@ a {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 0 0 0px 20px;
+  padding: 0 0 0px 15px !important;
   color: $pl-input-fg;
   font-size: 18px;
   font-family: inherit;
@@ -975,7 +975,7 @@ h1{
 h2, h3, h4, h5, h6 {
   font-weight: 900;
   color: #009966;
-  margin: 36px 0 12px 0;
+  margin: 20px 0 12px 0;
 }
 h2::before{
     content: '#';
