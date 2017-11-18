@@ -26,7 +26,7 @@
 
 ### 优化日志
 
-#### 改善访问体验，介入 `Pwa`
+#### 改善访问体验，注入 `Pwa`
 
-(Update@11 月 14)为跟上下一代 Web 应用的进程，有为网站介入 `PWA` 相关技术；添加 Web App Manifest，支持添加此博客到设备屏幕；注入了 Service Worker，提升了访问速度，优化了渲染性能，支持部分浏览器离线访问等。`PWA` 相关技术，可参见 [nice-front-end-tutorial: pwa](https://github.com/nicejade/nice-front-end-tutorial/blob/master/tutorial/pwa-tutorial.md)。
+(Update@11 月 14)为跟上下一代 Web 应用的进程，有为网站注入 `PWA` 相关技术；添加 Web App Manifest，支持添加此博客到设备屏幕；注入了 Service Worker，提升了访问速度，优化了渲染性能，支持部分浏览器离线访问等。`PWA` 相关技术，可参见 [nice-front-end-tutorial: pwa](https://github.com/nicejade/nice-front-end-tutorial/blob/master/tutorial/pwa-tutorial.md)。
 
