@@ -21,7 +21,6 @@ const ignoreCache = [
   /https?:\/\/fonts.googleapis.com\/css/,
   /chrome-extension:\//
 ];
-
 let port;
 
 /**
@@ -29,7 +28,8 @@ let port;
 */
 
 function developmentMode() {
-  return location.hostname === '127.0.0.1' || location.hostname === 'localhost' || __DEVELOPMENT__ || __DEBUG__;
+  let isLocalDev = location.hostname === '127.0.0.1' || location.hostname === 'localhost'
+  return  isLocalDev && (__DEVELOPMENT__ || __DEBUG__)
 }
 
 function cacheKey() {
