@@ -28,8 +28,7 @@ let port;
 */
 
 function developmentMode() {
-  let isLocalDev = location.hostname === '127.0.0.1' || location.hostname === 'localhost'
-  return  isLocalDev && (__DEVELOPMENT__ || __DEBUG__)
+  return location.hostname === '127.0.0.1' || location.hostname === 'localhost'
 }
 
 function cacheKey() {
