@@ -42,13 +42,9 @@ function isWeiXin(){
 // If sidebar has class 'mobile', hide it after clicking.
 $('.pl__all').on('click', function(even) {
   $(this).addClass('active').siblings().removeClass('active');
+  $('#sidebar, #pjax, #icon-arrow').addClass('fullscreen');
   if( isWeiXin() ){
-    setTimeout(function(){
-      alert(location.href)
-      location.reload(true);
-    },0);
-  }else{
-    $('#sidebar, #pjax, #icon-arrow').addClass('fullscreen');
+    setTimeout(function(){location.reload(true);},0);
   }
 });
 
