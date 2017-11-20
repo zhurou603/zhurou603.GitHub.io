@@ -54,7 +54,7 @@ $(document).ready(function() {
     $('#sidebar, #pjax, #icon-arrow').addClass('fullscreen');
   }
 
-  //@09-09 监听Ctrl+Enter || Enter键--以打开或关闭左边SideBar---Start;
+  //@16-09-09 监听Ctrl+Enter || Enter键--以打开或关闭左边SideBar---Start;
   document.onkeydown=function(event){
 　　 if(13 == event.keyCode && event.ctrlKey){
         openOrCloseSidebar(true)
@@ -62,7 +62,15 @@ $(document).ready(function() {
         openOrCloseSidebar(false)
     }
 　}
-  //@09-09 监听Ctrl+Enter || Enter键--以打开或关闭左边SideBar----End;
+  //@16-09-09 监听Ctrl+Enter || Enter键--以打开或关闭左边SideBar----End;
+
+  //@17-11-20 Randomly updated ads display basis configuration
+  var jadeAdsConfArr = [
+    {path: '//t.cn/Rj36MOy', image: '//t.cn/Rj36MOU'},
+    {path: '//t.cn/RjB8Z0C', image: '//t.cn/Rik8XrG'}]
+  var randomIdx = Math.floor(Math.random() * jadeAdsConfArr.length)
+  $('#jade-ads-block .jade-ads-a').attr("href", jadeAdsConfArr[randomIdx].path)
+  $('#jade-ads-block .jade-ads-img').attr("src", jadeAdsConfArr[randomIdx].image)
 });
 
 //Modify On-2016-02-26.-----------------Start
