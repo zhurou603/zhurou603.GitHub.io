@@ -30,7 +30,7 @@ title: 天意人间舫
 
 对于此博客，视其为辅助`晚晴幽草轩`の华丽存在；至于命其名为`天意人间舫`，这有在个人主博 **[晚晴幽草轩](http://www.jeffjade.com)** 中有专写一篇以述之。
 
-<img src="//nicejade.github.io/assets/images/jeffjade-nicejade.jpg" alt="晚晴幽草轩 天意人间舫">
+<img src="//blog.lovejade.cn/assets/images/jeffjade-nicejade.jpg" alt="晚晴幽草轩 天意人间舫">
 
 ## 对博客的理解
 
