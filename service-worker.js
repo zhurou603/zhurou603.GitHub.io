@@ -1,6 +1,6 @@
 'use strict';
 
-var version = 'v-2017-11-20 22:33';
+var version = 'v-2017-11-20 22:32';
 var __DEVELOPMENT__ = false;
 var __DEBUG__ = true;
 var offlineResources = [
@@ -65,9 +65,9 @@ function sendNotify(title, options, event) {
     return;
   }
 
-  var notificationPromise = self.registration.showNotification(title || '渣渣', Object.assign({
-    body: '千年王八万年龟！',
-    icon: 'https://zhouyueting.github.io/icon.png',
+  var notificationPromise = self.registration.showNotification(title || '轩帅', Object.assign({
+    body: '云在青天水在瓶',
+    icon: 'https://blog.lovejade.cn/assets/favicons/mstile-144x144.png',
     tag: 'push'
   }, options));
 
@@ -80,7 +80,7 @@ function sendNotify(title, options, event) {
 
 function onClickNotify(event) {
   event.notification.close();
-  var url = "https://zhouyueting.github.io/";
+  var url = "https://blog.lovejade.cn/";
 
   event.waitUntil(
     self.clients.matchAll({
