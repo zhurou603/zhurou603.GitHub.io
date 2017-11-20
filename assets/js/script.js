@@ -42,11 +42,12 @@ function isWeiXin(){
 // If sidebar has class 'mobile', hide it after clicking.
 $('.pl__all').on('click', function() {
   $(this).addClass('active').siblings().removeClass('active');
-  if( !isWeiXin() ){
-    setTimeout(function(){location.reload(true);},0);
-  }else{
-    $('#sidebar, #pjax, #icon-arrow').addClass('fullscreen');
-  }
+  $('#sidebar, #pjax, #icon-arrow').addClass('fullscreen');
+  // if( !isWeiXin() ){
+  //   setTimeout(function(){location.reload(true);},0);
+  // }else{
+  //   $('#sidebar, #pjax, #icon-arrow').addClass('fullscreen');
+  // }
 });
 
 $(document).ready(function() {

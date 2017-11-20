@@ -1,14 +1,14 @@
 'use strict';
 
-const version = 'v-2017-11-18 22:11';
-const __DEVELOPMENT__ = false;
-const __DEBUG__ = true;
-const offlineResources = [
+var version = 'v-2017-11-20 22:33';
+var __DEVELOPMENT__ = false;
+var __DEBUG__ = true;
+var offlineResources = [
   '/',
   '/index.html'
 ];
 
-const ignoreCache = [
+var ignoreCache = [
   /https?:\/\/hm.baidu.com\//,
   /https?:\/\/cdn.bootcss.com\//,
   /https?:\/\/static.duoshuo.com\//,
@@ -21,7 +21,7 @@ const ignoreCache = [
   /https?:\/\/fonts.googleapis.com\/css/,
   /chrome-extension:\//
 ];
-let port;
+var port;
 
 /**
 * common function
@@ -65,7 +65,7 @@ function sendNotify(title, options, event) {
     return;
   }
 
-  const notificationPromise = self.registration.showNotification(title || '渣渣', Object.assign({
+  var notificationPromise = self.registration.showNotification(title || '渣渣', Object.assign({
     body: '千年王八万年龟！',
     icon: 'https://zhouyueting.github.io/icon.png',
     tag: 'push'
@@ -80,7 +80,7 @@ function sendNotify(title, options, event) {
 
 function onClickNotify(event) {
   event.notification.close();
-  const url = "https://zhouyueting.github.io/";
+  var url = "https://zhouyueting.github.io/";
 
   event.waitUntil(
     self.clients.matchAll({
@@ -131,7 +131,7 @@ function cachedOrOffline(request) {
 function networkedAndCache(request) {
   return fetch(request)
     .then(response => {
-      const copy = response.clone();
+      var copy = response.clone();
 
       caches.open(cacheKey('resources'))
           .then(cache => {
@@ -163,7 +163,7 @@ function networkedOrOffline(request) {
 }
 
 function onFetch(event) {
-  const request = event.request;
+  var request = event.request;
 
   if (shouldAlwaysFetch(request)) {
       log('AlwaysFetch request: ', event.request.url);
@@ -246,7 +246,7 @@ function onMessage(event) {
   }
 
   if (event.data.type === 'notify') {
-      const {title, options} = event.data.info || {};
+      var {title, options} = event.data.info || {};
       sendNotify(title, options, event);
   }
 }
