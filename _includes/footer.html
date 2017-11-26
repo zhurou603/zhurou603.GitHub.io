@@ -3,10 +3,8 @@
 <script src="//cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
 <script async src="//cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.js"></script>
 <script async src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.js"></script>
-<script async src="//cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>
 <script async src="//tjs.sjs.sinajs.cn/open/api/js/wb.js"></script>
 <script async src="/assets/js/script.js"></script>
-<script type="text/javascript">hljs.initHighlightingOnLoad();</script>
 
 <script>
 function async(u, c) {
@@ -28,6 +26,12 @@ async("//cdn.bootcss.com/anchor-js/4.1.0/anchor.min.js",function(){
   }
   anchors.add('#post h1, #post h2, #post h3, #post h4');
   anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+})
+</script>
+
+<script>
+async("//cdn.bootcss.com/highlight.js/8.0/highlight.min.js",function(){
+  hljs.initHighlightingOnLoad();
 })
 </script>
 
