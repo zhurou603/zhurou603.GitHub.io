@@ -25,7 +25,7 @@ $tags-hover-fg:   #F7F7F7;
 $tags-active-fg:  #65c294;  //RuoZhu-Color
 $tags-bg:         #0099cc;
 
-$pl-bg:           #111111; // pl: posts-list
+$pl-bg:           #212121; // pl: posts-list
 $strong-blue:     #66CC99; //Strong-青色
 
 $pl-input-fg:     $green;
@@ -42,7 +42,7 @@ $post-link:       #268bd2;
 $post-hover:      $green;
 
 $inline-code-bd:  $border;
-$inline-code-fg:  #000;
+$inline-code-fg:  #111111;
 $inline-code-bg:  #fafafa;
 
 $selection-fg:    #fff;
@@ -510,10 +510,9 @@ a {
   color: $post-fg;
   font-size: 16px;
   line-height: 1.7;
-  background: $post-bg;
   overflow-x: hidden;
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+  background: $post-bg;
   ::selection {
     color: $selection-fg;
     background:  $selection-bg;
