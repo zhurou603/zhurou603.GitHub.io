@@ -974,25 +974,9 @@ h1{
 }
 h2, h3, h4, h5, h6 {
   font-weight: 900;
-  color: #009966;
+  color: #44A8F2;
   margin: 20px 0 12px 0;
 }
-h2::before{
-    content: '#';
-    color: #009966;
-    font-weight: bolder;
-}
-h3::before{
-    content: '##';
-    color: #009966;
-    font-weight: bolder;
-}
-h4::before{
-    content: '###';
-    color: #009966;
-    font-weight: bolder;
-}
-
 .hljs{
   padding-left: $page-margin-width !important;
 }
