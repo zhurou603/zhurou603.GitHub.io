@@ -70,7 +70,7 @@ $('.pl__all').on('click', function(even) {
 });
 
 $(document).ready(function() {
-  updateJadeAds()
+  setInterval(function(){ updateJadeAds() },8000);
   if (sidebar.hasClass('mobile')) {
     $('#sidebar, #pjax, #icon-arrow').addClass('fullscreen');
   }
