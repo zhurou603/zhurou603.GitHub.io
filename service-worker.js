@@ -1,6 +1,6 @@
 'use strict';
 
-var version = 'v-2017-11-20 22:32';
+var version = 'v-2017-11-26 22:32';
 var __DEVELOPMENT__ = false;
 var __DEBUG__ = true;
 var offlineResources = [

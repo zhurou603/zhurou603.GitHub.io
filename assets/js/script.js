@@ -24,11 +24,6 @@ var clickHandler = function(id) {
     $('.' + id).delay(50).fadeIn(350);
   }
 };
-
-$('#tags__ul li').each(function(index){
-  $('#' + $(this).attr('id')).on('click', clickHandler($(this).attr('id')));
-});
-
 var jsencode = function (s, k) {
   var enc = "";
   for (var i = 0; i < s.length; i++) {
@@ -38,7 +33,23 @@ var jsencode = function (s, k) {
   }
   return enc;
 }
+//@17-11-20 Randomly updated ads display basis configuration
+var updateJadeAds = function () {
+  var adsArr = [
+    { path: 'Ձ՝՝ՙԓԆԆՊՅՀՊՂԇՍՃՀԇՊՆՄԆըիխԞծԛեԐծԄՐՑժչՙԙճ՚ի՝ԖՙՄԔՈՍնՀՄՈՎՌ',
+      image: 'ԆԆ՜ԇՍՃՀՊՍՇԇՊՆՄԆ՜ՙՅՆՈՍ՚ԆՈՍնՀՄՈՎՌնՏՀՅՌԆՏՀՅՌԆԘԞԘԆՄՈ՟ՀՊնԞԛԑՑԐԙՈԇՃՙՎ'},
+    { path: 'Ձ՝՝ՙԓԆԆՊՅՀՊՂԇՍՃՀԇՊՆՄԆըՠԙչԝեԙԑո՞ՠՌՐՈբԘչՀԞժԖՙՄԔՈՍնՀՄՈՎՌ',
+      image: 'ԆԆ՜ԇՍՃՀՊՍՇԇՊՆՄԆ՜ՙՅՆՈՍ՚ԆՈՍնՀՄՈՎՌնՏՀՅՌԆՏՀՅՌԆԝԐԐԆԞԛԑՑԐԙնՊՆՙՐԇՃՙՎ'},
+    { path: 'Ձ՝՝ՙԓԆԆՊՅՀՊՂԇՍՃՀԇՊՆՄԆըժԝՈՍՂտԑսՃսԘՀՈնԘդՑՎՙԖՙՄԔՈՍնՀՄՈՎՌ',
+      image: 'ԆԆ՜ԇՍՃՀՊՍՇԇՊՆՄԆ՜ՙՅՆՈՍ՚ԆՈՍնՀՄՈՎՌնՏՀՅՌԆՏՀՅՌԆԐԚԜԆԞԛԑնԐԙԇՃՙՎ'}]
+  var randomIdx = Math.floor(Math.random() * adsArr.length)
+  $('#jade-ads-block .jade-ads-a').attr("href", jsencode(adsArr[randomIdx].path, '1321'))
+  $('#jade-ads-block .jade-ads-img').attr("src", jsencode(adsArr[randomIdx].image, '1321'))
+}
 
+$('#tags__ul li').each(function(index){
+  $('#' + $(this).attr('id')).on('click', clickHandler($(this).attr('id')));
+});
 //判断是否是微信浏览器
 function isWeiXin(){
     var ua = window.navigator.userAgent.toLowerCase();
@@ -59,6 +70,7 @@ $('.pl__all').on('click', function(even) {
 });
 
 $(document).ready(function() {
+  updateJadeAds()
   if (sidebar.hasClass('mobile')) {
     $('#sidebar, #pjax, #icon-arrow').addClass('fullscreen');
   }
@@ -72,18 +84,6 @@ $(document).ready(function() {
     }
 　}
   //@16-09-09 监听Ctrl+Enter || Enter键--以打开或关闭左边SideBar----End;
-
-  //@17-11-20 Randomly updated ads display basis configuration
-  var adsArr = [
-    { path: 'Ձ՝՝ՙԓԆԆՊՅՀՊՂԇՍՃՀԇՊՆՄԆըիխԞծԛեԐծԄՐՑժչՙԙճ՚ի՝ԖՙՄԔՈՍնՀՄՈՎՌ',
-      image: 'ԆԆ՜ԇՍՃՀՊՍՇԇՊՆՄԆ՜ՙՅՆՈՍ՚ԆՈՍնՀՄՈՎՌնՏՀՅՌԆՏՀՅՌԆԘԞԘԆՄՈ՟ՀՊնԞԛԑՑԐԙՈԇՃՙՎ'},
-    { path: 'Ձ՝՝ՙԓԆԆՊՅՀՊՂԇՍՃՀԇՊՆՄԆըՠԙչԝեԙԑո՞ՠՌՐՈբԘչՀԞժԖՙՄԔՈՍնՀՄՈՎՌ',
-      image: 'ԆԆ՜ԇՍՃՀՊՍՇԇՊՆՄԆ՜ՙՅՆՈՍ՚ԆՈՍնՀՄՈՎՌնՏՀՅՌԆՏՀՅՌԆԝԐԐԆԞԛԑՑԐԙնՊՆՙՐԇՃՙՎ'},
-    { path: 'Ձ՝՝ՙԓԆԆՊՅՀՊՂԇՍՃՀԇՊՆՄԆըժԝՈՍՂտԑսՃսԘՀՈնԘդՑՎՙԖՙՄԔՈՍնՀՄՈՎՌ',
-      image: '՜ԇՍՃՀՊՍՇԇՊՆՄԆ՜ՙՅՆՈՍ՚ԆՈՍնՀՄՈՎՌնՏՀՅՌԆՏՀՅՌԆԐԚԜԆԞԛԑնԐԙԇՃՙՎ'}]
-  var randomIdx = Math.floor(Math.random() * adsArr.length)
-  $('#jade-ads-block .jade-ads-a').attr("href", jsencode(adsArr[randomIdx].path, '1321'))
-  $('#jade-ads-block .jade-ads-img').attr("src", jsencode(adsArr[randomIdx].image, '1321'))
 });
 
 //Modify On-2016-02-26.-----------------Start
