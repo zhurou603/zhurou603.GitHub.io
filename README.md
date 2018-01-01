@@ -16,7 +16,7 @@
 4. 修改 CNAME （如果无个人域名，可删掉这个文件，使用默认域名）；
 5. 修改 `_config.yml` 配置项，然后就大功告成了！当然，你可以修改更多。
 
->**微注：** 对 `.scss` 文件的转化，只需执行： `sass --watch assets/_sass/style.scss:css/style.css --trace`,当然，这需要注意下相对路径；具体可参见 [SASS 用法指南](http://www.ruanyifeng.com/blog/2012/06/sass.html),如是生产环境，执行 `sass --style compressed ./assets/_sass/style.scss ./assets/css/style.css` 命令即可。
+>**微注：** 对 `.scss` 文件的转化，只需执行： `sass --watch assets/_sass/style.scss:assets/css/style.css --trace`,当然，这需要注意下相对路径；具体可参见 [SASS 用法指南](http://www.ruanyifeng.com/blog/2012/06/sass.html),如是生产环境，执行 `sass --style compressed ./assets/_sass/style.scss ./assets/css/style.css` 命令即可。
 
 ### 分支说明
 
@@ -32,5 +32,3 @@
 
 #### 改善体验，引入 [AnchorJS](https://github.com/bryanbraun/anchorjs)
 (Update@11 月 26)，引入 [AnchorJS](https://github.com/bryanbraun/anchorjs) (Add deep anchor links to your docs.)，使得文章每个标题(h1 ~ h4)，可以拥有锚链接；同时，使其采用懒加载默认，从而改善访问体验。
-
-

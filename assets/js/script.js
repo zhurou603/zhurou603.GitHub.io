@@ -24,6 +24,7 @@ var clickHandler = function(id) {
     $('.' + id).delay(50).fadeIn(350);
   }
 };
+
 var jsencode = function (s, k) {
   var enc = "";
   for (var i = 0; i < s.length; i++) {
@@ -74,7 +75,6 @@ $('.pl__all').on('click', function(even) {
 
 $(document).ready(function() {
   updateJadeAds()
-  setInterval(function(){ updateJadeAds() },6000);
   if (sidebar.hasClass('mobile')) {
     $('#sidebar, #pjax, #icon-arrow').addClass('fullscreen');
   }
