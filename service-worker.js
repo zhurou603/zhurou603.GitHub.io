@@ -1,6 +1,6 @@
 'use strict';
 
-var version = 'v-2017-11-27 22:32';
+var version = 'v-2017-01-09 22:22';
 var __DEVELOPMENT__ = false;
 var __DEBUG__ = true;
 var offlineResources = [
@@ -9,16 +9,8 @@ var offlineResources = [
 ];
 
 var ignoreCache = [
-  /https?:\/\/hm.baidu.com\//,
   /https?:\/\/cdn.bootcss.com\//,
-  /https?:\/\/static.duoshuo.com\//,
   /https?:\/\/www.google-analytics.com\//,
-  /https?:\/\/dn-lbstatics.qbox.me\//,
-  /https?:\/\/ajax.cloudflare.com\//,
-  /https?:\/\/cdn1.lncld.net\//,
-  /https?:\/\/api.leancloud.cn\//,
-  /https?:\/\/lzw.me\/wp\-admin/,
-  /https?:\/\/fonts.googleapis.com\/css/,
   /chrome-extension:\//
 ];
 var port;

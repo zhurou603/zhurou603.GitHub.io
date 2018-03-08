@@ -30,8 +30,8 @@ ga:
   url: blog.lovejade.cn
 
 # disqus 设置
-disqus:
-  shortname: yunjeffblog
+#disqus:
+  #shortname: yunjeffblog
 
 #rake configuration on 2016-03-01
 post:

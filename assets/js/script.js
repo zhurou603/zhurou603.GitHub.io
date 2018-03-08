@@ -24,6 +24,7 @@ var clickHandler = function(id) {
     $('.' + id).delay(50).fadeIn(350);
   }
 };
+
 var jsencode = function (s, k) {
   var enc = "";
   for (var i = 0; i < s.length; i++) {
@@ -62,6 +63,9 @@ function isWeiXin(){
 
 // If sidebar has class 'mobile', hide it after clicking.
 $('.pl__all').on('click', function(even) {
+  // fix problem: switch page hljs cannot refresh@17-12-13
+  location.href = even.currentTarget.href
+
   $(this).addClass('active').siblings().removeClass('active');
   $('#sidebar, #pjax, #icon-arrow').addClass('fullscreen');
   if( isWeiXin() ){
@@ -70,7 +74,7 @@ $('.pl__all').on('click', function(even) {
 });
 
 $(document).ready(function() {
-  setInterval(function(){ updateJadeAds() },8000);
+  updateJadeAds()
   if (sidebar.hasClass('mobile')) {
     $('#sidebar, #pjax, #icon-arrow').addClass('fullscreen');
   }
@@ -192,21 +196,24 @@ function afterPjax() {
 
   // Lazy Loading Disqus
   // http://jsfiddle.net/dragoncrew/SHGwe/1/
-  var ds_loaded = false,
-      top = $('#disqus_thread').offset().top;
-  window.disqus_shortname = $('#disqus_thread').attr('name');
+  if ($('#disqus_thread') && $('#disqus_thread').offset()) {
+    var ds_loaded = false,
+        top = $('#disqus_thread').offset().top;
+    window.disqus_shortname = $('#disqus_thread').attr('name');
 
-  function check() {
-    if ( !ds_loaded && container.scrollTop() + container.height() > top ) {
-      $.ajax({
-        type: 'GET',
-        url: '//' + disqus_shortname + '.disqus.com/embed.js',
-        dataType: 'script',
-        cache: true
-      });
-      ds_loaded = true;
+    function check() {
+      if ( !ds_loaded && container.scrollTop() + container.height() > top ) {
+        $.ajax({
+          type: 'GET',
+          url: '//' + disqus_shortname + '.disqus.com/embed.js',
+          dataType: 'script',
+          cache: true
+        });
+        ds_loaded = true;
+      }
     }
-  }check();
-  container.scroll(check);
+    check();
+    container.scroll(check);
+  }
 }
 afterPjax();
