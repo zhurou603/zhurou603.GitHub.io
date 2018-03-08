@@ -27,7 +27,7 @@ avatar: /assets/images/nicejade-icon.jpg
 # google analytics 设置
 ga:
   id: UA-86109050-1
-  url: nicejade.github.io
+  url: blog.lovejade.cn
 
 # disqus 设置
 disqus:
