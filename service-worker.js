@@ -10,6 +10,7 @@ var offlineResources = [
 
 var ignoreCache = [
   /https?:\/\/cdn.bootcss.com\//,
+  /https?:\/\/api.github.com\//,
   /https?:\/\/www.google-analytics.com\//,
   /chrome-extension:\//
 ];
