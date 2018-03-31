@@ -79,17 +79,6 @@ $(document).ready(function() {
     $('#sidebar, #pjax, #icon-arrow').addClass('fullscreen');
   }
 
-  var gitalk = new Gitalk({
-    clientID: '8e75547b6fcb5623e5f5',
-    clientSecret: '14fb744b0710d0fa6e987748538dfa66baa6fe16',
-    repo: 'nicejade.github.io',
-    owner: 'nicejade',
-    admin: ['nicejade'],
-    id: md5(location.pathname),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
-  gitalk.render('gitalk-container')
-
   //@16-09-09 监听Ctrl+Enter || Enter键--以打开或关闭左边SideBar---Start;
   document.onkeydown=function(event){
 　　 if(13 == event.keyCode && event.ctrlKey){
