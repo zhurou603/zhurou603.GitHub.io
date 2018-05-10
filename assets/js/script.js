@@ -74,6 +74,13 @@ $('.pl__all').on('click', function(even) {
 });
 
 $(document).ready(function() {
+  // compatible for static vue object. @2018-05-10
+  var partStaticPath = '/vue-boilerplate-template/'
+  if (document.location.href.indexOf(partStaticPath)) {
+    document.location.href = document.location.origin + partStaticPath
+    return
+  }
+
   updateJadeAds()
   if (sidebar.hasClass('mobile')) {
     $('#sidebar, #pjax, #icon-arrow').addClass('fullscreen');
