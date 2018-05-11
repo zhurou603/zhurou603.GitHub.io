@@ -76,7 +76,7 @@ $('.pl__all').on('click', function(even) {
 $(document).ready(function() {
   // compatible for static vue object. @2018-05-10
   var partStaticPath = '/vue-boilerplate-template/'
-  if (document.location.href.indexOf(partStaticPath)) {
+  if (document.location.href.indexOf(partStaticPath) >= 0) {
     document.location.href = document.location.origin + partStaticPath
     return
   }
