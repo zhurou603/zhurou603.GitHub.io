@@ -1,0 +1,50 @@
+permalink: /:year/:month/:day/:title.html
+markdown: kramdown
+highlighter: pygments
+encoding: utf-8
+
+kramdown:
+  input: GFM
+
+# 作者信息
+author:
+  name: 晚晴幽草
+  email: jeffjade@163.com
+  link: https://www.jeffjade.com
+  weibo: https://weibo.com/3235949794
+  github: https://github.com/nicejade
+
+# 站点信息
+title: 天意人间舫
+description: 个人博客(Jekyll);整理、记载关于工具/资源/生活/技术/读书/影音等经验和思考;
+url: https://blog.lovejade.cn
+rss_url: /pages/atom.xml
+
+# avatar头像及Favicon
+avatar: /assets/images/nicejade-icon.jpg
+# favicon: https://www.jeffjade.com/img/xuan.ico
+
+# google analytics 设置
+ga:
+  id: UA-86109050-1
+  url: blog.lovejade.cn
+
+# disqus 设置
+#disqus:
+  #shortname: yunjeffblog
+
+#rake configuration on 2016-03-01
+post:
+  template: _post.txt
+  extension: md
+page:
+  template: _page.txt
+  extension: md
+editor: atom
+git:
+  branch: master
+transfer:
+  command: rsync
+  settings: -av
+  source: _site/
+  destination: ~/Git/nicejade.github.com/

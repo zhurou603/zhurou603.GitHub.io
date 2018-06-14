@@ -1,0 +1,16 @@
+---
+layout: base
+---
+
+<h1 id="post__title" data-identifier="{{ page.date | date: "%Y%m%d" }}">{{ page.title }}</h1>
+{% include ads.html %}
+<article id="post__content">
+  {{ content }}
+</article> <!-- end #post__content -->
+
+{% include advert.html %}
+
+{% include share.html %}
+
+<div id="gitalk-container"></div>
+<!-- {% include disqus.html %} -->
