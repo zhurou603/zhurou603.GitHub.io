@@ -14,7 +14,8 @@
 
 $red:             #F8645A;
 $green:           #2EB695;
-$grey:            #7D8B99;
+$mgrey:           #e6e8fa;
+$grey:            transparentize($mgrey, .9);
 $black:           #020202;
 $e2e2e2:          #e2e2e2;
 
@@ -978,7 +979,8 @@ h2, h3, h4, h5, h6 {
   margin: 20px 0 12px 0;
 }
 .hljs{
-  padding-left: $page-margin-width !important;
+  padding-left: 0 !important;
+  background: #000000 !important;
 }
 
 @media screen and (max-width: $mobile-width) {
