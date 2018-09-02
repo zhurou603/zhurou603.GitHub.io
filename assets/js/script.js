@@ -34,19 +34,6 @@ var jsencode = function (s, k) {
   }
   return enc;
 }
-//@17-11-20 Randomly updated ads display basis configuration
-var updateJadeAds = function () {
-  var adsArr = [
-    { path: 'Ձ՝՝ՙԓԆԆՊՅՀՊՂԇՍՃՀԇՊՆՄԆըիխԞծԛեԐծԄՐՑժչՙԙճ՚ի՝ԖՙՄԔՈՍնՀՄՈՎՌ',
-      image: 'ԆԆ՜ԇՍՃՀՊՍՇԇՊՆՄԆ՜ՙՅՆՈՍ՚ԆՈՍնՀՄՈՎՌնՏՀՅՌԆՏՀՅՌԆԘԞԘԆՄՈ՟ՀՊնԞԛԑՑԐԙՈԇՃՙՎ'},
-    { path: 'Ձ՝՝ՙԓԆԆՊՅՀՊՂԇՍՃՀԇՊՆՄԆըՠԙչԝեԙԑո՞ՠՌՐՈբԘչՀԞժԖՙՄԔՈՍնՀՄՈՎՌ',
-      image: 'ԆԆ՜ԇՍՃՀՊՍՇԇՊՆՄԆ՜ՙՅՆՈՍ՚ԆՈՍնՀՄՈՎՌնՏՀՅՌԆՏՀՅՌԆԝԐԐԆԞԛԑՑԐԙնՊՆՙՐԇՃՙՎ'},
-    { path: 'Ձ՝՝ՙԓԆԆՊՅՀՊՂԇՍՃՀԇՊՆՄԆըժԝՈՍՂտԑսՃսԘՀՈնԘդՑՎՙԖՙՄԔՈՍնՀՄՈՎՌ',
-      image: 'ԆԆ՜ԇՍՃՀՊՍՇԇՊՆՄԆ՜ՙՅՆՈՍ՚ԆՈՍնՀՄՈՎՌնՏՀՅՌԆՏՀՅՌԆԐԚԜԆԞԛԑնԐԙԇՃՙՎ'}]
-  var randomIdx = Math.floor(Math.random() * adsArr.length)
-  $('#jade-ads-block .jade-ads-a').attr("href", jsencode(adsArr[randomIdx].path, '1321'))
-  $('#jade-ads-block .jade-ads-img').attr("src", jsencode(adsArr[randomIdx].image, '1321'))
-}
 
 $('#tags__ul li').each(function(index){
   $('#' + $(this).attr('id')).on('click', clickHandler($(this).attr('id')));
@@ -81,7 +68,6 @@ $(document).ready(function() {
     return
   }
 
-  updateJadeAds()
   if (sidebar.hasClass('mobile')) {
     $('#sidebar, #pjax, #icon-arrow').addClass('fullscreen');
   }
