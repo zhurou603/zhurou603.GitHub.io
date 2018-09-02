@@ -11,8 +11,8 @@ $page-margin-width: 36px;
 
 /* Code blocks */
 .highlight {
-  margin-left: -($page-margin-width);
-  margin-right: -($page-margin-width);
+  margin-left: 0;
+  margin-right: 0;
 }
 pre {
   padding: 0;
