@@ -11,7 +11,7 @@ description: 优美｜感情话/情书收集
 **情不知所起，一往而深**。那些与旁人说来脸红的绰号暱称、轻灵的诗意，和深刻的激动，像筛子一般将文字抖出松弛微醺的质感。任时世流转，风华变迁，在这美妙的质感前，循迹而去，仍能感观：一些在文字中留鲜的岁月，一段段永不衰老的情缘。隔著漫长的岁月，那些美妙的字句，跨越千山万水蹁跹而来，带给我们不曾褪色的悸动。
 
 
-![天意人间舫](http://img3.iqilu.com/data/attachment/forum/201308/21/192654ai88zf6zaa60zddo.jpg)
+![天意人间舫](//image.nicelinks.site/nice-landscape.jpg)
 
 ####  **少安哥，我想跟你一辈子好。**
 
@@ -35,7 +35,7 @@ description: 优美｜感情话/情书收集
 
 >出自**王小波**《爱你就像爱生命》。小波对于这感情的态度，一如其散文谈道理，情文达爱意：浪漫至极，单纯而美好；读来，总觉如饮甘泉，怡然自得，口齿留香(读其小说，则好如品青梅之酒)。
 
-![天意人间舫](http://5.26923.com/download/pic/000/331/89e9c12893868a8b8515f35a44e8ddea.jpg)
+![天意人间舫](//image.nicelinks.site/arrangeFlower.jpeg)
 
 ---
 
@@ -49,7 +49,7 @@ description: 优美｜感情话/情书收集
 
 ---
 
-![天意人间舫](http://7xiy8p.com1.z0.glb.clouddn.com/20160526/76811464234316237?imageMogr2/auto-orient)
+![天意人间舫](//image.nicelinks.site/shiwaitaoyuan.jpeg)
 
 #### **你给了我生命中不能承受之重，我将用我的一生来报答你。**
 
