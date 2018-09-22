@@ -12,6 +12,10 @@ var ignoreCache = [
   /https?:\/\/cdn.bootcss.com\//,
   /https?:\/\/api.github.com\//,
   /https?:\/\/www.google-analytics.com\//,
+  /https?:\/\/js.t.sinajs.cn\//,
+  /https?:\/\/tjs.sjs.sinajs.cn\//,
+  /https?:\/\/image.nicelinks.site\//,
+  /webpack:\//,
   /chrome-extension:\//
 ];
 var port;
