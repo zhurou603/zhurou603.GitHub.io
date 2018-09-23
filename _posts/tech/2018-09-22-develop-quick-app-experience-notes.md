@@ -14,7 +14,7 @@ description: 快应用是基于手机硬件平台的新型应用形态，标准�
 
 ![快应用开发体验纪要](https://image.nicelinks.site/quickapp.png)
 
->本文首发于个人新博客：[静晴轩别苑~快应用之开发体验纪要(https://nice.lovejade.cn/zh/article/develop-quick-app-experience-notes.html)。
+>本文首发于个人新博客：[静晴轩别苑~快应用之开发体验纪要](https://nice.lovejade.cn/zh/article/develop-quick-app-experience-notes.html)。
 
 ## 快应用特点
 

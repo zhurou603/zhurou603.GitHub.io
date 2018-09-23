@@ -1,6 +1,6 @@
 'use strict';
 
-var version = 'v-2017-05-11 22:22';
+var version = 'blog.lovejade.cn';
 var __DEVELOPMENT__ = false;
 var __DEBUG__ = true;
 var offlineResources = [
@@ -55,10 +55,9 @@ function sendNotify(title, options, event) {
     if (port && port.postMessage) {
       port.postMessage({
         type: 'applyNotify',
-        info: {title, options}
+        info: { title, options }
       });
     }
-
     return;
   }
 
@@ -83,11 +82,11 @@ function onClickNotify(event) {
     self.clients.matchAll({
       type: "window"
     })
-    .then(() => {
-      if (self.clients.openWindow) {
+      .then(() => {
+        if (self.clients.openWindow) {
           return self.clients.openWindow(url);
-      }
-    })
+        }
+      })
   );
 }
 
@@ -100,9 +99,9 @@ function onInstall(event) {
 
   event.waitUntil(
     caches.open(cacheKey('offline'))
-        .then(cache => cache.addAll(offlineResources))
-        .then(() => log('installation complete! version: ' + version))
-        .then(() => self.skipWaiting())
+      .then(cache => cache.addAll(offlineResources))
+      .then(() => log('installation complete! version: ' + version))
+      .then(() => self.skipWaiting())
   );
 }
 
@@ -129,11 +128,10 @@ function networkedAndCache(request) {
   return fetch(request)
     .then(response => {
       var copy = response.clone();
-
       caches.open(cacheKey('resources'))
-          .then(cache => {
-              cache.put(request, copy);
-          });
+        .then(cache => {
+          cache.put(request, copy);
+        });
 
       log("(network: cache write)", request.method, request.url);
       return response;
@@ -142,37 +140,37 @@ function networkedAndCache(request) {
 
 function cachedOrNetworked(request) {
   return caches.match(request)
-      .then((response) => {
-          log(response ? '(cached)' : '(network: cache miss)', request.method, request.url);
-          return response ||
-              networkedAndCache(request)
-              .catch(() => offlineResponse(request));
-      });
+    .then((response) => {
+      log(response ? '(cached)' : '(network: cache miss)', request.method, request.url);
+      return response ||
+        networkedAndCache(request)
+          .catch(() => offlineResponse(request));
+    });
 }
 
 function networkedOrOffline(request) {
   return fetch(request)
-      .then(response => {
-          log('(network)', request.method, request.url);
-          return response;
-      })
-      .catch(() => offlineResponse(request));
+    .then(response => {
+      log('(network)', request.method, request.url);
+      return response;
+    })
+    .catch(() => offlineResponse(request));
 }
 
 function onFetch(event) {
   var request = event.request;
 
   if (shouldAlwaysFetch(request)) {
-      log('AlwaysFetch request: ', event.request.url);
-      event.respondWith(networkedOrOffline(request));
-      return;
+    log('AlwaysFetch request: ', event.request.url);
+    event.respondWith(networkedOrOffline(request));
+    return;
   }
 
   if (shouldFetchAndCache(request)) {
-      event.respondWith(
-          networkedAndCache(request).catch(() => cachedOrOffline(request))
-      );
-      return;
+    event.respondWith(
+      networkedAndCache(request).catch(() => cachedOrOffline(request))
+    );
+    return;
   }
 
   event.respondWith(cachedOrNetworked(request));
@@ -184,24 +182,23 @@ function onFetch(event) {
 
 function removeOldCache() {
   return caches
-      .keys()
-      .then(keys =>
-          Promise.all(
-              keys
-              .filter(key => !key.startsWith(version))
-              .map(key => caches.delete(key))
-          )
+    .keys()
+    .then(keys =>
+      Promise.all(
+        keys
+          .filter(key => !key.startsWith(version))
+          .map(key => caches.delete(key))
       )
-      .then(() => {
-          log('removeOldCache completed.');
-      });
+    )
+    .then(() => {
+      log('removeOldCache completed.');
+    });
 }
 
 function onActivate(event) {
   log('activate event in progress.');
   event.waitUntil(Promise.all([
-      self.clients.claim(),
-      removeOldCache()
+    removeOldCache()
   ]))
 }
 
@@ -212,7 +209,7 @@ function onActivate(event) {
 function onPush(event) {
   log('onPush ', event);
   sendNotify('Hi:', {
-      body: `onPush${new Date()}？_ ？~`
+    body: `onPush${new Date()}？_ ？~`
   }, event);
 }
 
@@ -223,7 +220,7 @@ function onPush(event) {
 function onSync(event) {
   log('onSync', event);
   sendNotify('Hi:', {
-      body: `onSync${new Date()}？_ ？ ~`
+    body: `onSync${new Date()}？_ ？ ~`
   }, event);
 }
 
@@ -235,16 +232,16 @@ function onMessage(event) {
   log('onMessage', event);
 
   if (event.ports) {
-      port = event.ports[0];
+    port = event.ports[0];
   }
 
   if (!event.data) {
-      return;
+    return;
   }
 
   if (event.data.type === 'notify') {
-      var {title, options} = event.data.info || {};
-      sendNotify(title, options, event);
+    var { title, options } = event.data.info || {};
+    sendNotify(title, options, event);
   }
 }
 
@@ -252,8 +249,8 @@ log("Hello from ServiceWorker land!", version);
 
 self.addEventListener('install', onInstall);
 self.addEventListener('fetch', onFetch);
-self.addEventListener("activate", onActivate);
-self.addEventListener("push", onPush);
-self.addEventListener("sync", onSync);
+self.addEventListener('activate', onActivate);
+self.addEventListener('push', onPush);
+self.addEventListener('sync', onSync);
 self.addEventListener('message', onMessage);
-self.addEventListener("notificationclick", onClickNotify);
+self.addEventListener('notificationclick', onClickNotify);
