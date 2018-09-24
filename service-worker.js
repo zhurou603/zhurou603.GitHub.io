@@ -2,7 +2,7 @@
 
 var version = 'blog.lovejade.cn';
 var __DEVELOPMENT__ = false;
-var __DEBUG__ = true;
+var __DEBUG__ = false;
 var offlineResources = [
   '/',
   '/index.html'
@@ -191,6 +191,7 @@ function removeOldCache() {
       )
     )
     .then(() => {
+      self.clients.claim()
       log('removeOldCache completed.');
     });
 }
@@ -248,8 +249,8 @@ function onMessage(event) {
 log("Hello from ServiceWorker land!", version);
 
 self.addEventListener('install', onInstall);
-self.addEventListener('fetch', onFetch);
 self.addEventListener('activate', onActivate);
+self.addEventListener('fetch', onFetch);
 self.addEventListener('push', onPush);
 self.addEventListener('sync', onSync);
 self.addEventListener('message', onMessage);

@@ -49,7 +49,7 @@ if (document.getElementById("gitalk-container")) {
 <script type="text/javascript">
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
-    .register('/service-worker.js', {scope: '/'})
+    .register('/service-worker.js', {scope: './'})
     .then(registration => console.log('SW Registration Success！Scope: ', registration.scope))
     .catch(err => console.log('SW Registration Failed! Error: ', err));
 }
